@@ -2,7 +2,11 @@
 __pycache__/
 *.py[cod]
 *$py.class
+<<<<<<< HEAD
 
+=======
+*.ini
+>>>>>>> 项目初始化
 # C extensions
 *.so
 
@@ -14,7 +18,10 @@ dist/
 downloads/
 eggs/
 .eggs/
+<<<<<<< HEAD
 lib/
+=======
+>>>>>>> 项目初始化
 lib64/
 parts/
 sdist/
