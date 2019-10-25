@@ -4,20 +4,12 @@ Created on 2019-10-20
 
 @author: fengjinqi
 '''
-
-try: import httplib
-except ImportError:
-    import http.client as httplib
-
-import urllib
 import time
 import hashlib
-import json
 import top
 import itertools
 import mimetypes
 import requests
-from urllib.parse import urlencode
 '''
 定义一些系统变量
 '''
