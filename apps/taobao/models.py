@@ -8,6 +8,7 @@ from django.db import models
 class Tao(models.Model):
     appkey = models.CharField(max_length=100,verbose_name='appkey')
     secret = models.CharField(max_length=100,verbose_name='secret')
+    adzone_id = models.CharField(max_length=60,verbose_name='adzone_id',default='')
     add_time = models.DateTimeField(default=datetime.now,verbose_name='添加时间')
 
     def __str__(self):
@@ -15,4 +16,28 @@ class Tao(models.Model):
 
     class Meta:
         verbose_name = '配置'
+        verbose_name_plural = verbose_name
+
+
+class Carteary(models.Model):
+    title = models.CharField(max_length=20,verbose_name='类型')
+    active = models.BooleanField(default=False,verbose_name='是否启动')
+    comprehensive = models.CharField(max_length=20,verbose_name='综合')
+    shoe = models.CharField(max_length=20,verbose_name='鞋包配饰')
+    mother = models.CharField(max_length=20,verbose_name='母婴')
+    ladies = models.CharField(max_length=20,verbose_name='女装')
+    makeup = models.CharField(max_length=20,verbose_name='美妆个护')
+    food = models.CharField(max_length=20,verbose_name='食品')
+    furnishing = models.CharField(max_length=20,verbose_name='家居家装')
+    mens = models.CharField(max_length=20,verbose_name='男装')
+    sports = models.CharField(max_length=20,verbose_name='运动户外')
+    digita = models.CharField(max_length=20,verbose_name='数码家电')
+    underwear = models.CharField(max_length=20,verbose_name='内衣')
+    add_time = models.DateTimeField(default=datetime.now,verbose_name='添加时间')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = '类型'
         verbose_name_plural = verbose_name

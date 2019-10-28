@@ -5,6 +5,7 @@
 
 {% endblock %}
 {% block content %}
+{% comment %}
 <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
@@ -42,6 +43,8 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+{% endcomment %}
+
 {% endblock %}
 {% block js %}
     <script>
@@ -49,7 +52,14 @@
         url:'',
         type:'get',
         success:function (res) {
-            console.log(res)
+
+            var data = res.tbk_dg_optimus_material_response.result_list.map_data
+
+            var html=''
+            for (var i in data){
+                html+="<a href="+data[i].coupon_share_url+">utl</a>"
+            }
+            $('body').append(html)
         }
     })
     </script>
