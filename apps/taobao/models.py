@@ -41,3 +41,20 @@ class Carteary(models.Model):
     class Meta:
         verbose_name = '类型'
         verbose_name_plural = verbose_name
+
+
+class Banner(models.Model):
+    title = models.CharField(max_length=200,verbose_name='活动名称')
+    url = models.TextField(verbose_name='跳转地址')
+    img = models.URLField(verbose_name='图片地址',default='')
+    start_time = models.DateField(default=datetime.now,verbose_name='活动开始时间')
+    end_time = models.DateField(default=datetime.now,verbose_name='活动结束时间')
+    pid = models.CharField(max_length=100,verbose_name='活动id')
+    add_time = models.DateTimeField(default=datetime.now, verbose_name='添加时间')
+
+    def __str__(self):
+        return self.title
+
+    class Meta:
+        verbose_name = '活动'
+        verbose_name_plural = verbose_name
