@@ -60,12 +60,7 @@ def getCategory(request):
 
 @require_GET
 def getHome(request):
-
     obj = Carteary.objects.values('comprehensive').filter(active=True)
-
-
-
-
     req=top.api.TbkDgOptimusMaterialRequest('https://eco.taobao.com/router/rest')
     req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
     req.page_size = 20
@@ -84,36 +79,25 @@ def getHome(request):
     return JsonResponse(results)
 
 
-def getTaoHome(request):
+def getSearch(request):
 
-    if request.is_ajax():
+
         #req=top.api.TbkDgOptimusMaterialRequest('https://eco.taobao.com/router/rest')
-        req=top.api.TbkDgMaterialOptionalRequest('https://eco.taobao.com/router/rest')
+    req=top.api.TbkDgMaterialOptionalRequest('https://eco.taobao.com/router/rest')
+    req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
+    req.page_size=20
+    req.adzone_id=int(getTaoSettings().get('adzone_id'))
+    req.need_free_shipment = 'true'
+    req.page_no = request.GET.get('page',1)
+    req.material_id=6707
+    req.q = request.GET.get('q','')
+    req.has_coupon = 'true'
+    results = None
+    try:
+        results= req.getResponse()
+    except Exception as e:
+        print(e)
+        results = e
 
-        req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
-
-
-
-        req.page_size=40
-        req.adzone_id=int(getTaoSettings().get('adzone_id'))
-        req.need_free_shipment = 'true'
-        req.page_no=1
-        req.material_id=6707
-        req.q = request.GET.get('q','')
-        req.has_coupon = 'true'
-
-        # req.device_value="xxx"
-        # req.device_encrypt="MD5"
-        # req.device_type="IMEI"
-        #req.content_id=596771289892
-        # req.content_source="xxx"
-        # req.item_id=33243
-        results = None
-        try:
-            results= req.getResponse()
-        except Exception as e:
-            print(e)
-            results = e
-
-        return JsonResponse(results)
-    return render(request,'taobaoIndex.html',locals())
+    return JsonResponse(results)
+    #return render(request,'taobaoIndex.html',locals())
