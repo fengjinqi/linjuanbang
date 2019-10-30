@@ -235,10 +235,11 @@ class RestApi(object):
 
         header = self.get_request_header()
         result = requests.request(self.__httpmethod,self.__domain,data=sys_parameters,headers=header,timeout=timeout)
+        print(result.status_code, '===', result.text)
         if result.status_code is not 200:
             raise RequestException('invalid http status ' + str(result.status_code) + ',detail body:' + result.text)
         jsonobj = result.json()
-        print(jsonobj)
+
         if 'error_response' in jsonobj:
             error = TopException()
             if P_CODE in jsonobj["error_response"]:

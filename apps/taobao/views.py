@@ -60,6 +60,11 @@ def getCategory(request):
 
 @require_GET
 def getHome(request):
+    """
+    首页
+    :param request:
+    :return:
+    """
     obj = Carteary.objects.values('comprehensive').filter(active=True)
     req=top.api.TbkDgOptimusMaterialRequest('https://eco.taobao.com/router/rest')
     req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
@@ -80,7 +85,11 @@ def getHome(request):
 
 
 def getSearch(request):
-
+    """
+    搜索
+    :param request:
+    :return:
+    """
 
         #req=top.api.TbkDgOptimusMaterialRequest('https://eco.taobao.com/router/rest')
     req=top.api.TbkDgMaterialOptionalRequest('https://eco.taobao.com/router/rest')
