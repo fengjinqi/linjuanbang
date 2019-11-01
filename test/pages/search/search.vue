@@ -227,7 +227,7 @@
 		  text-align: center;
 		  text{
 			  border-radius: 15px;
-			  padding: 4px 15px;
+			  padding: 3px 8px;
 			  background: #FB3434;
 			  font-size: 14px;
 			  color: #fff;
