@@ -6,6 +6,7 @@ from django.views.decorators.http import require_GET,require_http_methods
 # Create your views here.
 
 import top.api
+import jd
 from apps.taobao.models import Banner,Carteary
 from apps.utils.taobao import getTaoSettings
 from datetime import datetime
@@ -84,14 +85,13 @@ def getHome(request):
     return JsonResponse(results)
 
 
+@require_GET
 def getSearch(request):
     """
     搜索
     :param request:
     :return:
     """
-
-        #req=top.api.TbkDgOptimusMaterialRequest('https://eco.taobao.com/router/rest')
     req=top.api.TbkDgMaterialOptionalRequest('https://eco.taobao.com/router/rest')
     req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
     req.page_size=20
@@ -109,4 +109,33 @@ def getSearch(request):
         results = e
 
     return JsonResponse(results)
-    #return render(request,'taobaoIndex.html',locals())
+
+
+# @require_GET
+# def getRush(request):
+#     """
+#     搜索
+#     :param request:
+#     :return:
+#     """
+#     req=top.api.TbkContentGetRequest('https://eco.taobao.com/router/rest')
+#     req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
+#     req.adzone_id = int(getTaoSettings().get('adzone_id'))
+#     req.type = 1
+#     #req.before_timestamp = 1491454244598
+#     req.count = 10
+#     req.cid = 2
+#     req.image_width = 300
+#     req.image_height = 300
+#     req.content_set = 1
+#     results = None
+#     try:
+#         results= req.getResponse()
+#     except Exception as e:
+#         print(e)
+#         results = e
+#
+#     return JsonResponse(results)
+
+
+

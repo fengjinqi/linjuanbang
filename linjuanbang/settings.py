@@ -40,7 +40,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'apps.taobao.apps.TaobaoConfig'
+    'apps.taobao.apps.TaobaoConfig',
+    'apps.jd_app.apps.JdAppConfig'
 ]
 
 MIDDLEWARE = [

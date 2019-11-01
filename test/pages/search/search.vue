@@ -4,12 +4,19 @@
 			<view class="status_bar">
 				<text @click="black" class="uni-icon uni-icon-back" style="font-size: 24px;color: #fff;"></text>
 				<input type="text" class="input" placeholder ="搜索" v-model="value" :focus='focus' placeholder-style='font-size:12px;text-align:center;' />
-				<text style="color: #fff;padding: 5px;"@click="search">搜索</text>
+				<text style="color: #fff;padding: 5px;" @click ="search(false)">搜索</text>
 			</view>
 			
 		</view>
 		<view class="">
+			
 			<scroll-view scroll-y="true" @scroll="scroll" :scroll-top="scrollTop" :style="{height:height}" @scrolltolower='getHomePage'>
+				<view class="" v-if="history">
+					<text style="color: #999;font-size:14px;padding: 10px;">历史搜索</text>
+					<view class="history">
+						<text @click="search(item)" v-for="(item,index) in storage" :key='index'>{{item}}</text>
+					</view>
+				</view>
 				<view v-for="(item,index) in msg" :key='index'>
 					<view class="main" @click="navigator(item.coupon_share_url)">
 						<view class="main-left">
@@ -42,12 +49,25 @@
 				msg:[],
 				scrollTop:0,
 				page:1,
+				history:true,
 				old: {
 					scrollTop: 0
 				},
 				loading:'loading',
 				type:false,
+				storage:[]
 			};
+		},
+		onShow() {
+	
+			var _this = this
+			uni.getStorage({
+			    key: 'storage_key',
+			    success:(res)=> {
+					_this.storage = res.data
+			       
+			    }
+			});
 		},
 		computed:{
 			tudu(){
@@ -61,8 +81,7 @@
 			}
 		},
 		mounted(){
-			this.focus = true
-			
+			this.focus = true	
 		},
 		components: {uniLoadMore},
 		methods:{
@@ -75,8 +94,22 @@
 			navigator(e){
 				window.location.href=e
 			},
-			search(){
+			search(n){
+				
+				if(n){
+					this.value = n
+				}
 				if(this.value.trim().length<=0)return
+				this.history=false
+				this.storage.unshift(this.value)
+				if(this.storage.length>10)this.storage.pop()
+				try {
+				    uni.setStorageSync('storage_key', this.storage);
+				} catch (e) {
+				    // error
+				}
+				console.log(this.storage)
+		
 				uni.showLoading({
 				    title: '加载中...'
 				});
@@ -171,6 +204,19 @@
 	.nav-header{
 		background: #ff464e;
 		height: 50px;
+	}
+	.history{
+		padding: 10px;
+		text{
+			padding: 3px 15px;
+			font-size: 14px;
+			border-radius: 20px;
+			margin-right: 10px;
+			color: #666;
+			background: #F6F6F6;
+			margin-bottom: 10px;
+			display: inline-block;
+		}
 	}
   .status_bar {
      // height: var(--status-bar-height);
