@@ -1,7 +1,324 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="650960e0-97d1-48f1-b2de-7ecc9e6499b0" name="Default Changelist" comment="" />
+    <list default="true" id="650960e0-97d1-48f1-b2de-7ecc9e6499b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/jd_app/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/utils/jd.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/linjuanbang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/linjuanbang.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jd_app/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jd_app/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jd_app/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jd_app/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jd_app/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jd_app/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AddressAllProvincesQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AddressAllProvincesQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AddressCitysByProvinceIdQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AddressCitysByProvinceIdQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AddressCountysByCityIdQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AddressCountysByCityIdQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AddressTownsByCountyIdQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AddressTownsByCountyIdQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleAfsApplyCreateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleAfsApplyCreateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleAuditCancelQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleAuditCancelQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleAvailableNumberCompQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleAvailableNumberCompQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleCustomerExpectCompQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleCustomerExpectCompQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleSendSkuUpdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleSendSkuUpdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleServiceDetailInfoQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleServiceDetailInfoQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleServiceListPageQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleServiceListPageQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/AfterSaleWareReturnJdCompQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/AfterSaleWareReturnJdCompQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/BizProductGetSimilarSkuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/BizProductGetSimilarSkuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/BizProductGetSkuByPageRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/BizProductGetSkuByPageRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/BizProductGetcategoryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/BizProductGetcategoryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/BizProductGetcategorysRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/BizProductGetcategorysRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/CheckResultRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/CheckResultRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/CreatePromotionSiteJosSaveAppPromtionSiteInfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/CreatePromotionSiteJosSaveAppPromtionSiteInfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/GetRelationByJDUidGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/GetRelationByJDUidGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/InvoiceQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/InvoiceQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/InvoiceSubmitRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/InvoiceSubmitRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/InvoiceWaybillRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/InvoiceWaybillRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerItemGetnologinpromotionRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerItemGetnologinpromotionRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerItemQuerybigfieldconvertskuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerItemQuerybigfieldconvertskuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerItemQuerycategoriesbyfidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerItemQuerycategoriesbyfidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerItemQueryskusbycatidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerItemQueryskusbycatidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerOrderCancelorderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerOrderCancelorderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerOrderDefrayRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerOrderDefrayRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerOrderGetorderdetailRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerOrderGetorderdetailRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerOrderGetordertrackRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerOrderGetordertrackRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerServicePromotionGoodsinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerServicePromotionGoodsinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAddressGetareabymehodnameRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAddressGetareabymehodnameRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketApplyaftermarketRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketApplyaftermarketRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketAuditcancelRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketAuditcancelRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketGetbackmodeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketGetbackmodeRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketGetreturnedwayRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketGetreturnedwayRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketQueryservicedetailRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketQueryservicedetailRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketQueryservicepageRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketQueryservicepageRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketSaveaftermarketRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSettledAftermarketSaveaftermarketRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerSkuProductServiceRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerSkuProductServiceRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerTradeGetstockRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerTradeGetstockRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerTradeSubmitRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerTradeSubmitRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerUnionorderserviceQueryordersRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerUnionorderserviceQueryordersRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinCpsurlConvertRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinCpsurlConvertRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinGenclickurlBatchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinGenclickurlBatchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinGetpkglistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinGetpkglistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinGetskuidlistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinGetskuidlistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinSearchSkuByCategoryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinSearchSkuByCategoryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinSearchSkuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinSearchSkuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinSkuPromotionBatchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerXuanpinSkuPromotionBatchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerYaoWarePriceUpdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerYaoWarePriceUpdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KeplerYaoWareStockUpdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KeplerYaoWareStockUpdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAftermarketExtendAfsprocessRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAftermarketExtendAfsprocessRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAftermarketExtendFindnumberRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAftermarketExtendFindnumberRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAftermarketRefundRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAftermarketRefundRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAftersaleOrderidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAftersaleOrderidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaConfigAddrsgetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaConfigAddrsgetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaGetconfigurewithloginRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaGetconfigurewithloginRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaHandleRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaHandleRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaHandleventRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphaHandleventRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphashoppingconfSaveinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAlphashoppingconfSaveinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenAreaCheckareaRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenAreaCheckareaRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenBatchConvertCpslinkRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenBatchConvertCpslinkRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenClientGetunplRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenClientGetunplRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenCommentCommentlistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenCommentCommentlistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenConfigOauthSaveRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenConfigOauthSaveRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenConfirmreceivedQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenConfirmreceivedQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenCouponJdbeansIncomeeansRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenCouponJdbeansIncomeeansRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenCouponSearchSkuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenCouponSearchSkuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenCpsConvertKeplerurlRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenCpsConvertKeplerurlRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenDingdongProtocolConvertRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenDingdongProtocolConvertRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenEinvoiceQueryeinvoiceinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenEinvoiceQueryeinvoiceinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenFalvwangRequestRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenFalvwangRequestRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenGetnewstockbyidQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenGetnewstockbyidQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenGetsellpriceQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenGetsellpriceQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenInvoiceQuerythrapplynoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenInvoiceQuerythrapplynoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemFindcanusecouponsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemFindcanusecouponsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemFindjoinactivesRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemFindjoinactivesRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemGetmobilewarestyleandjsbywareidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemGetmobilewarestyleandjsbywareidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemGetwarestyleandjsbywareidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemGetwarestyleandjsbywareidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerybookbasicfieldRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerybookbasicfieldRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerybookbigfieldRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerybookbigfieldRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerycommentinfoyskusRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerycommentinfoyskusRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQueryexpirecouponlistbypageRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQueryexpirecouponlistbypageRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerystockRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerystockRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerythirtydaysummaryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQuerythirtydaysummaryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQueryusablecouponlistbypageRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQueryusablecouponlistbypageRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQueryusedcouponlistbypageRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenItemQueryusedcouponlistbypageRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenJdrepairGetinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenJdrepairGetinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenJdrepairSaveaddressRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenJdrepairSaveaddressRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartAddskustocartRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartAddskustocartRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartChechskuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartChechskuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartGetcartRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartGetcartRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartModifyskunumRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartModifyskunumRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartUncheckskuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerCartUncheckskuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerQuerySkudescriptionRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenKeplerQuerySkudescriptionRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenMasterReserveGetmypresellRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenMasterReserveGetmypresellRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicChannelkeyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicChannelkeyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicCheckstatusRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicCheckstatusRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicDeliverandactivecodeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicDeliverandactivecodeRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicUnbinddeviceRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenMigumusicUnbinddeviceRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenNbdMedicineGetricendtockRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenNbdMedicineGetricendtockRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenNbdMedicineRxsyncRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenNbdMedicineRxsyncRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpayClosesignRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpayClosesignRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpayGetsignurlRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpayGetsignurlRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpaySavesignedRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpaySavesignedRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpaySavetokenRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenNosecretpaySavetokenRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenOrderCheckstocksplitRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenOrderCheckstocksplitRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenOrderFindchildorderbyparentRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenOrderFindchildorderbyparentRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenOrderInfoQueryorderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenOrderInfoQueryorderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPaybillPresubmitRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPaybillPresubmitRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPaybillRefundApplyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPaybillRefundApplyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterGetexpressinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterGetexpressinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterGetexttraceRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterGetexttraceRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterSubscribemobileRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterSubscribemobileRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterSubscribeorderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterSubscribeorderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterUnsubscribemobileRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPolcenterUnsubscribemobileRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPopCartGetcartRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPopCartGetcartRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPopEnsuregettinggoodsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPopEnsuregettinggoodsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPromiseDosConfigRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPromiseDosConfigRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenPromotionPidurlconvertRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenPromotionPidurlconvertRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenQuerypingpouGetcpsskubypageRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenQuerypingpouGetcpsskubypageRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRankInfoGatherServiceRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRankInfoGatherServiceRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanCancleplanRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanCancleplanRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanCompletedorderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanCompletedorderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanQueryplancountRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanQueryplancountRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanQueryplanlistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanQueryplanlistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanQueryplanlistnewRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanQueryplanlistnewRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanShipmentorderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenRegularPlanShipmentorderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenReportUploadRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenReportUploadRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenSearchAssociationalWordRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenSearchAssociationalWordRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenSeckillKeplerqbRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenSeckillKeplerqbRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenSelectjdorderQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenSelectjdorderQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenShenzhouConfigGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenShenzhouConfigGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenShopGoodsListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenShopGoodsListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenShopinfoSkuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenShopinfoSkuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenShopwechatIsvfollowndancelRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenShopwechatIsvfollowndancelRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenSkuGetwareinfolistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenSkuGetwareinfolistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenSkuQueryinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenSkuQueryinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeGetorderrefundRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeGetorderrefundRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetaddressbyidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetaddressbyidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetaddresslistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetaddresslistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetcouponlistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetcouponlistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetinvoiceinfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterGetinvoiceinfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterInsertaddressRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterInsertaddressRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterSaveconsigneeaddressRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterSaveconsigneeaddressRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterUsecouponRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeMasterUsecouponRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeScalubuyQiangsiteRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeScalubuyQiangsiteRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeTencentOrderlistRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenTradeTencentOrderlistRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenUnionSearchByelitedRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenUnionSearchByelitedRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenUserLoginGetuidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenUserLoginGetuidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWeiboCartAddRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWeiboCartAddRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpJmiwareAddWareRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpJmiwareAddWareRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpJmiwareEditWareRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpJmiwareEditWareRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpJmiwareUpdateWareStatusRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpJmiwareUpdateWareStatusRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscLegalOrderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscLegalOrderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscMakeCertCallbackRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscMakeCertCallbackRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscPreviewRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscPreviewRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscVerifiedNotifyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenWfpVscVerifiedNotifyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenXdpSoaGetSessionIdRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenXdpSoaGetSessionIdRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenXimalayaGetresourceRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenXimalayaGetresourceRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenXuanpinSearchSkuRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenXuanpinSearchSkuRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenXuanpinSearchgoodsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenXuanpinSearchgoodsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenXunpinSearchCouponRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenXunpinSearchCouponRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoMultipriceUpdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoMultipriceUpdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoOrdersyncUpdatestateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoOrdersyncUpdatestateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoPropertyUpdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoPropertyUpdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoShelfstateBatchupdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/KplOpenYaoShelfstateBatchupdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/MessageDelRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/MessageDelRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/MessageGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/MessageGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareAttributeGroupsQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareAttributeGroupsQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareAttributeValuesQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareAttributeValuesQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareAttributesQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareAttributesQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareBaseproductGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareBaseproductGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareMobilebigfieldGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareMobilebigfieldGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareProductsafedaysGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareProductsafedaysGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareProductsortattGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareProductsortattGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/NewWareSameproductskuidsQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/NewWareSameproductskuidsQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OfcTraceTraceJewelryJsfServiceInstitutionsSearchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OfcTraceTraceJewelryJsfServiceInstitutionsSearchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OfcTraceTraceJewelryJsfServiceOrderForCertificateSearchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OfcTraceTraceJewelryJsfServiceOrderForCertificateSearchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OfcTraceTraceJewelryJsfServiceOrderForCertificateStoreForJOSRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OfcTraceTraceJewelryJsfServiceOrderForCertificateStoreForJOSRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderCancelorderRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderCancelorderRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderCheckDlokOrderQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderCheckDlokOrderQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderCheckNewOrderQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderCheckNewOrderQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderCheckRefuseOrderQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderCheckRefuseOrderQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderDoPayRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderDoPayRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderFreightGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderFreightGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderJdOrderIDByThridOrderIDQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderJdOrderIDByThridOrderIDQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderJdOrderQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderJdOrderQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderOccupyStockConfirmRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderOccupyStockConfirmRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderOrderTrackQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderOrderTrackQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderPromiseCalendarGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderPromiseCalendarGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderStockoutRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderStockoutRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderUniteSubmitRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderUniteSubmitRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/OrderWaybilltrackSearchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/OrderWaybilltrackSearchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/PriceBalanceGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/PriceBalanceGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/PriceBalanceQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/PriceBalanceQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/PriceJincaiCreditQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/PriceJincaiCreditQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/PriceSellPriceGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/PriceSellPriceGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductBaseQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductBaseQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductCheckAreaLimitQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductCheckAreaLimitQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductCommentSummarysQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductCommentSummarysQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductDetailQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductDetailQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductIsCodQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductIsCodQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductSkuCheckRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductSkuCheckRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductSkuGiftQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductSkuGiftQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductSkuImageQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductSkuImageQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductSkuQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductSkuQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductStateQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductStateQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ProductYanbaoSkuQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ProductYanbaoSkuQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/SearchWareRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/SearchWareRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServiceCouponImportCouponRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServiceCouponImportCouponRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServiceGoodsQuerySecKillGoodsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServiceGoodsQuerySecKillGoodsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServiceGoodsQueryStuPriceGoodsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServiceGoodsQueryStuPriceGoodsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionAppGetcodeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionAppGetcodeRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionAppReportRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionAppReportRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionBatchGetcodeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionBatchGetcodeRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionContentGetcodeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionContentGetcodeRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCouponGetCodeBySubUnionIdRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCouponGetCodeBySubUnionIdRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCouponGetCodeByUnionIdRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCouponGetCodeByUnionIdRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCouponGetInfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCouponGetInfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCreatePromotionSiteBatchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionCreatePromotionSiteBatchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionGetcodeRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionGetcodeRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionGoodsInfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionGoodsInfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionPidGetPidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionPidGetPidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionQueryDesignboomGoodsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionQueryDesignboomGoodsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionQueryPromotionSiteRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionQueryPromotionSiteRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionWxsqGetCodeBySubUnionIdRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionWxsqGetCodeBySubUnionIdRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServicePromotionWxsqGetCodeByUnionIdRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServicePromotionWxsqGetCodeByUnionIdRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServiceRebateExternalGetOrderExtRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServiceRebateExternalGetOrderExtRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/ServiceYhdPromotionGetInfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/ServiceYhdPromotionGetInfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/StockForListBatgetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/StockForListBatgetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamCitylistGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamCitylistGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamCountBykeywordGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamCountBykeywordGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamCurrentListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamCurrentListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamDistrictlistGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamDistrictlistGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamGoodsCategoryListGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamGoodsCategoryListGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamIdsListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamIdsListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamKeywordListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamKeywordListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamNearListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamNearListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamNearbycountGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamNearbycountGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamPromotionHotListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamPromotionHotListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamPromotionSameListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamPromotionSameListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamSearchRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamSearchRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamSkulistGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamSkulistGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamSubGroupListGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamSubGroupListGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamTotalnumberGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamTotalnumberGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamTourGroupListGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamTourGroupListGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/TeamVirtualGroupListGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/TeamVirtualGroupListGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionDoubanBookServiceQueryBookUrlListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionDoubanBookServiceQueryBookUrlListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenCategoryGoodsGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenCategoryGoodsGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponGiftGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponGiftGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponGiftStopRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponGiftStopRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponImportationRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponImportationRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenCouponQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenExtraDeliverymanValidateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenExtraDeliverymanValidateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsBigfieldQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsBigfieldQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsLinkQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsLinkQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsPromotiongoodsinfoQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsPromotiongoodsinfoQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsSeckillQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsSeckillQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsStupriceQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsStupriceQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenOrderBonusQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenOrderBonusQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenOrderQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenOrderQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenPositionCreateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenPositionCreateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenPositionQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenPositionQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionAppletGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionAppletGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionBysubunionidGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionBysubunionidGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionByunionidGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionByunionidGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionCommonGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenPromotionCommonGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenStatisticsGiftcouponQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenStatisticsGiftcouponQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOpenUserPidGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOpenUserPidGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionOrderServiceQueryCommisionsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionOrderServiceQueryCommisionsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionSearchGoodsCategoryQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionSearchGoodsCategoryQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionSearchGoodsKeywordQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionSearchGoodsKeywordQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionSearchGoodsParamQueryRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionSearchGoodsParamQueryRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionSearchQueryCouponGoodsRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionSearchQueryCouponGoodsRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryCommissionOrdersRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryCommissionOrdersRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryCommissionOrdersWithKeyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryCommissionOrdersWithKeyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryImportOrdersRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryImportOrdersRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryImportOrdersWithKeyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryImportOrdersWithKeyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryOrderListRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryOrderListRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryOrderListWithKeyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryOrderListWithKeyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryOrderListWithPidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryOrderListWithPidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPerformanceForReverseRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPerformanceForReverseRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPerformanceForReverseWithKeyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPerformanceForReverseWithKeyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPerformanceWithPidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPerformanceWithPidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPullInWithPidRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UnionServiceQueryPullInWithPidRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/UserGetUserInfoByOpenIdRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/UserGetUserInfoByOpenIdRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareBasebookGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareBasebookGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareBasevideoGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareBasevideoGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareBookbigfieldGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareBookbigfieldGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WarePriceGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WarePriceGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareProductCatelogyListGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareProductCatelogyListGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareProductbigfieldGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareProductbigfieldGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareProductimageGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareProductimageGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareProductsortGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareProductsortGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/WareVideobigfieldGetRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/WareVideobigfieldGetRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/YsdkMemberApplyJsfServiceQueryMemberStatusRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/YsdkMemberApplyJsfServiceQueryMemberStatusRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/YsdkMemberApplyJsfServiceSaveMemberAndProtocolInfoRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/YsdkMemberApplyJsfServiceSaveMemberAndProtocolInfoRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/YsdkSettlementQuerySettlementStatusRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/YsdkSettlementQuerySettlementStatusRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/YsdkSettlementSettlementApplyRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/YsdkSettlementSettlementApplyRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/YsdkSettlementSettlementUpdateRequest.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/YsdkSettlementSettlementUpdateRequest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/jd/api/rest/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/rest/__init__.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,44 +330,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/apps/jd_app/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
-              <folding>
-                <element signature="e#0#36#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jd/api/rest/__init__.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="305" column="1" selection-start-line="305" selection-start-column="1" selection-end-line="305" selection-end-column="1" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/jd/api/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-302">
-              <caret line="228" column="37" lean-forward="true" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
-              <folding>
-                <element signature="e#74#85#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="1014">
+              <caret line="247" column="25" selection-start-line="247" selection-start-column="25" selection-end-line="247" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/Envs/venv/Lib/site-packages/requests/api.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-353">
+              <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
             </state>
           </provider>
         </entry>
@@ -58,10 +351,22 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/top/api/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="37">
-              <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+            <state relative-caret-position="314">
+              <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="235" selection-end-column="42" />
               <folding>
                 <element signature="e#74#85#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/jd_app/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="150">
+              <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
+              <folding>
+                <element signature="e#0#36#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -84,11 +389,12 @@
       <find>taobao.tbk.dg.item.coupon.get</find>
       <find>taobao.tbk.dg.material.optional</find>
       <find>has_coupon</find>
-      <find>print</find>
       <find>P_SESSION</find>
       <find>P_PARTNER_ID</find>
       <find>__secret</find>
       <find>P_ACCESS_TOKEN</find>
+      <find>print</find>
+      <find>jd.union.open.goods.jingfen.query</find>
     </findStrings>
     <dirStrings>
       <dir>C:\Users\lenovo\Desktop\linjuanbang\top</dir>
@@ -116,16 +422,20 @@
         <option value="$PROJECT_DIR$/apps/taobao/urls.py" />
         <option value="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py" />
         <option value="$PROJECT_DIR$/jd/api/rest/__init__.py" />
+        <option value="$PROJECT_DIR$/apps/jd_app/models.py" />
+        <option value="$PROJECT_DIR$/apps/jd_app/admin.py" />
+        <option value="$PROJECT_DIR$/apps/utils/jd.py" />
+        <option value="$PROJECT_DIR$/jd/api/rest/KplOpenUserLoginGetuidRequest.py" />
         <option value="$PROJECT_DIR$/jd/api/base.py" />
         <option value="$PROJECT_DIR$/apps/jd_app/views.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-43" />
-    <option name="y" value="94" />
+    <option name="x" value="-37" />
+    <option name="y" value="168" />
     <option name="width" value="1346" />
-    <option name="height" value="696" />
+    <option name="height" value="697" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -138,50 +448,27 @@
           <expand>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="jd_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="jd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="jd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="jd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="rest" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="linjuanbang" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="top" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="top" type="9f88c78c:ScopeViewTreeModel$FileNode" />
               <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
@@ -208,12 +495,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\Desktop\linjuanbang\apps" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Users\admin\Desktop\linjuanbang" />
+      <recent name="D:\Users\admin\Desktop\linjuanbang\apps\utils" />
       <recent name="C:\Users\lenovo\Desktop\linjuanbang\jd\api" />
       <recent name="C:\Users\lenovo\Desktop\linjuanbang\jd\api\rest" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\linjuanbang\apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -289,7 +578,7 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
       <option name="port" value="8000" />
-      <option name="host" value="192.168.0.163" />
+      <option name="host" value="" />
       <option name="additionalOptions" value="" />
       <option name="browserUrl" value="" />
       <option name="runTestServer" value="false" />
@@ -333,14 +622,14 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="74758000" />
+    <option name="totallyTimeSpent" value="81237000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26399395" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25266525" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" />
@@ -351,11 +640,11 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" id="Debug" order="9" visible="true" weight="0.41451612" />
+      <window_info active="true" anchor="bottom" id="Debug" order="9" visible="true" weight="0.41523606" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
-      <window_info anchor="bottom" id="manage.py@linjuanbang" order="13" weight="0.29354838" />
+      <window_info anchor="bottom" id="manage.py@linjuanbang" order="13" weight="0.29291844" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="1" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="SciView" order="2" />
@@ -447,16 +736,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="14" column="36" lean-forward="true" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/views/decorators/http.py" />
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/apps/registry.py" />
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/forms/models.py" />
@@ -471,26 +750,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
           <caret line="20" column="12" lean-forward="true" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="4" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/tests.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="44">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -520,13 +779,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="1" lean-forward="true" selection-start-column="1" selection-end-column="80" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/utils/taobao.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="18" lean-forward="true" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -561,23 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="41" column="33" selection-start-line="41" selection-start-column="33" selection-end-line="41" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/top/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -592,37 +827,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/top/api/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="37">
-          <caret line="24" column="25" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
-          <folding>
-            <element signature="e#74#85#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1243">
-          <caret line="141" selection-start-line="141" selection-end-line="141" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#398#967#0" />
-            <element signature="e#1013#1841#0" />
-            <element signature="e#1883#2612#0" />
-            <element signature="e#2656#3295#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jd/api/rest/__init__.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="305" column="1" selection-start-line="305" selection-start-column="1" selection-end-line="305" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jd/api/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -632,34 +836,136 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jd/api/rest/KplOpenUserLoginGetuidRequest.py">
+    <entry file="file://$PROJECT_DIR$/apps/taobao/tests.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="28" lean-forward="true" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+        <state relative-caret-position="75">
+          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jd/api/base.py">
+    <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-302">
-          <caret line="228" column="37" lean-forward="true" selection-start-line="228" selection-start-column="37" selection-end-line="228" selection-end-column="37" />
+        <state relative-caret-position="25">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="87" selection-start-line="87" selection-end-line="87" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/taobao/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="7" selection-start-line="7" selection-end-line="18" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/taobao/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/jd_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="31" lean-forward="true" selection-start-line="10" selection-start-column="31" selection-end-line="10" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/api/rest/KplOpenUserLoginGetuidRequest.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="50" lean-forward="true" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/jd/api/rest/__init__.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="316">
+          <caret line="311" column="83" lean-forward="true" selection-start-line="311" selection-start-column="83" selection-end-line="311" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/jd_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/taobao.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="16" selection-start-line="6" selection-start-column="16" selection-end-line="6" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/utils/jd.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="17" selection-start-line="3" selection-start-column="4" selection-end-line="3" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="267">
+          <caret line="95" column="94" selection-start-line="95" selection-start-column="33" selection-end-line="95" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/venv/Lib/site-packages/requests/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-353">
+          <caret line="15" column="4" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/top/api/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="314">
+          <caret line="234" lean-forward="true" selection-start-line="234" selection-end-line="235" selection-end-column="42" />
           <folding>
             <element signature="e#74#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py">
+    <entry file="file://$PROJECT_DIR$/jd/api/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" column="20" lean-forward="true" selection-start-line="8" selection-start-column="20" selection-end-line="8" selection-end-column="53" />
+        <state relative-caret-position="1014">
+          <caret line="247" column="25" selection-start-line="247" selection-start-column="25" selection-end-line="247" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/jd_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="150">
+          <caret line="22" column="21" lean-forward="true" selection-start-line="22" selection-start-column="21" selection-end-line="22" selection-end-column="21" />
           <folding>
             <element signature="e#0#36#0" expanded="true" />
           </folding>

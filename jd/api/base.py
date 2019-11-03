@@ -1,21 +1,21 @@
 # -*- coding: utf-8 -*-
-'''
-Created on 2019-10-20
+import requests
 
-@author: fengjinqi
-'''
+try:
+    import httplib
+except ImportError:
+    import http.client as httplib
+import urllib
 import time
 import hashlib
+import json
 import jd
 import itertools
 import mimetypes
-import requests
 
 '''
 定义一些系统变量
 '''
-
-SYSTEM_GENERATE_VERSION = "taobao-sdk-python-fengjinqi"
 
 P_APPKEY = "app_key"
 P_API = "method"
@@ -25,14 +25,14 @@ P_FORMAT = "format"
 P_TIMESTAMP = "timestamp"
 P_SIGN = "sign"
 P_SIGN_METHOD = "sign_method"
-
+P_JSON_PARAM_KEY = "param_json"
 
 P_CODE = 'code'
 P_SUB_CODE = 'sub_code'
 P_MSG = 'msg'
 P_SUB_MSG = 'sub_msg'
 
-N_REST = '/router/rest'
+N_REST = '/routerjson'
 
 
 def sign(secret, parameters):
@@ -50,16 +50,15 @@ def sign(secret, parameters):
         parameters = "%s%s%s" % (secret,
                                  str().join('%s%s' % (key, parameters[key]) for key in keys),
                                  secret)
-        print(parameters)
     sign = hashlib.md5(parameters.encode('utf8')).hexdigest().upper()
     return sign
 
 
 def mixStr(pstr):
-    if (isinstance(pstr, str)):
+    if(isinstance(pstr, str)):
         return pstr
-    # elif(isinstance(pstr, unicode)):
-    # return pstr.encode('utf-8')
+    #elif(isinstance(pstr, unicode)):
+       # return pstr.encode('utf-8')
     elif (isinstance(pstr, bytes)):
         # return pstr.encode('utf-8')
         return pstr.decode('utf-8')
@@ -139,7 +138,7 @@ class MultiPartForm(object):
         return '\r\n'.join(flattened)
 
 
-class TopException(Exception):
+class JdException(Exception):
     # ===========================================================================
     # 业务异常类
     # ===========================================================================
@@ -173,7 +172,7 @@ class RestApi(object):
     # Rest api的基类
     # ===========================================================================
 
-    def __init__(self, domain='https://router.jd.com/api', port=80):
+    def __init__(self, domain='gw.api.360buy.net', port=80):
         # =======================================================================
         # 初始化基类
         # Args @param domain: 请求的域名或者ip
@@ -188,7 +187,7 @@ class RestApi(object):
 
     def get_request_header(self):
         return {
-            'Content-type': 'application/x-www-form-urlencoded;charset=UTF-8',
+            'Content-type': 'application/x-www-form-urlencoded',
             "Cache-Control": "no-cache",
             "Connection": "Keep-Alive",
         }
@@ -196,8 +195,8 @@ class RestApi(object):
     def set_app_info(self, appinfo):
         # =======================================================================
         # 设置请求的app信息
-        # @param appinfo: import top
-        #                 appinfo top.appinfo(appkey,secret)
+        # @param appinfo: import jd
+        #                 appinfo jd.appinfo(appkey,secret)
         # =======================================================================
         self.__app_key = appinfo.appkey
         self.__secret = appinfo.secret
@@ -206,52 +205,52 @@ class RestApi(object):
         return ""
 
     def getMultipartParas(self):
-        return []
+        return [];
 
     def getTranslateParas(self):
-        return {}
+        return {};
 
     def _check_requst(self):
         pass
-
     def getTime(self):
         localTime = time.localtime(time.time())
         strTime = time.strftime("%Y-%m-%d %H:%M:%S", localTime)
         return strTime
-
-    def getResponse(self, authrize=None, timeout=30):
+    def getResponse(self, accessToken=None, version='2.0', timeout=30):
         # =======================================================================
         # 获取response结果
         # =======================================================================
-        print(self.getapiname())
         sys_parameters = {
             P_FORMAT: 'json',
             P_APPKEY: self.__app_key,
             P_SIGN_METHOD: "md5",
             P_VERSION: '1.0',
             P_TIMESTAMP: str(self.getTime()),
+            #P_PARTNER_ID: SYSTEM_GENERATE_VERSION,
             P_API: self.getapiname(),
         }
-        application_parameter = {}
-        application_parameter['param_json'] = self.getApplicationParameters()
-        print(application_parameter)
-        sign_parameter = sys_parameters.copy()
-        sign_parameter.update(application_parameter)
+        if accessToken is not None:
+            sys_parameters[P_ACCESS_TOKEN] = accessToken
+        application_parameter = self.getApplicationParameters()
 
-        sys_parameters[P_SIGN] = sign(self.__secret, sign_parameter)
-        sys_parameters.update(sign_parameter)
-        print(sys_parameters)
-        print(sign_parameter)
-        print(self.getApplicationParameters())
+        sys_parameters[P_JSON_PARAM_KEY] = json.dumps(application_parameter, ensure_ascii=False,
+                                                      default=lambda value: value.__dict__)
+        sys_parameters[P_SIGN] = sign(self.__secret, sys_parameters)
+        from urllib.parse import urlencode
+
+        print(self.__domain+"?"+urlencode(sys_parameters))
+
+        n = 'https://router.jd.com/api?method=jd.union.open.goods.jingfen.query&v=1.0&app_key=dd0e33fbd25eaab95f50cfebc72d8925&sign_method=md5&format=json&timestamp=2019-11-03%2001:03:03&sign=17CB8780BE5A9DAE565D6F65FD9779DA&param_json={%22goodsReq%22:{%22eliteId%22:%2222%22}}'
+        #result = requests.get(self.__domain+"?"+urlencode(sys_parameters))
+
         header = self.get_request_header()
-        print(self.__httpmethod, self.__domain,sys_parameters)
-        result = requests.request('GET', self.__domain, data=sys_parameters, headers=header,
-                                  timeout=timeout)
-        print(result.status_code, '===', result.text)
-        if result.status_code is not 200:
-            raise RequestException('invalid http status ' + str(result.status_code) + ',detail body:' + result.text)
-        jsonobj = result.json()
-
+        result = requests.request(self.__httpmethod,self.__domain,data=sys_parameters,headers=header,timeout=timeout)
+        print(result.text)
+        jsonobj = {}
+        try:
+            jsonobj = result.json()
+        except Exception as e:
+            jsonobj =e
         return jsonobj
 
     def getApplicationParameters(self):

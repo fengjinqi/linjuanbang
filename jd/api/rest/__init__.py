@@ -303,7 +303,7 @@ from jd.api.rest.InvoiceQueryRequest import InvoiceQueryRequest
 from jd.api.rest.KplOpenPaybillPresubmitRequest import KplOpenPaybillPresubmitRequest
 from jd.api.rest.AfterSaleAuditCancelQueryRequest import AfterSaleAuditCancelQueryRequest
 from jd.api.rest.AfterSaleAvailableNumberCompQueryRequest import AfterSaleAvailableNumberCompQueryRequest
-#from jd.api.rest.KplOpenUserLoginGetuidRequest import KplOpenUserLoginGetuidRequest
+from jd.api.rest.KplOpenUserLoginGetuidRequest import KplOpenUserLoginGetuidRequest
 from jd.api.rest.WareProductsortGetRequest import WareProductsortGetRequest
 from jd.api.rest.NewWareSameproductskuidsQueryRequest import NewWareSameproductskuidsQueryRequest
 from jd.api.rest.NewWareProductsortattGetRequest import NewWareProductsortattGetRequest
