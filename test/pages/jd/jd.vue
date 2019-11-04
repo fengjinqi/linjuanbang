@@ -7,8 +7,6 @@
 				</view>
 			</scroll-view>
 		 </view>
-		
-		 
 		 <scroll-view scroll-y="true" @scroll="scroll" :scroll-top="scrollTop" :style="{height:height}" @scrolltolower='getHomePage'>
 		 	<view class="">
 		 		<swiper class="swiper" style="height: 90px;" circular ='true'>
@@ -66,6 +64,7 @@
 				squared:[],
 				page:1,
 				msg:[],
+				flag:true,
 				old: {
 					scrollTop: 0
 				}
@@ -120,6 +119,7 @@
 				uni.showLoading({
 				    title: '加载中...'
 				});
+				this.page=1
 				this.scrollTop = this.old.scrollTop
 				this.$nextTick(function() {
 					this.scrollTop = 0
@@ -143,8 +143,10 @@
 				window.location.href=e
 			},
 			getHomePage(){
-				alert()
-				return
+				if(!this.flag){
+					return
+				}
+				this.flag=false
 				this.type=true
 				this.page++
 				console.log('==')
@@ -153,6 +155,7 @@
 					method:'GET',
 					data:{"type":this.categoryId,'page':this.page},
 					success:(res) => {
+						this.flag=true
 						this.type = false
 						if(res.statusCode==200){
 							let result = res.data.jd_union_open_goods_jingfen_query_response
@@ -172,6 +175,7 @@
 						}
 					},
 					fail: () => {
+						this.flag=true
 						this.type=false
 						uni.showToast({
 						    title: '网络错误,请稍后重试',
@@ -179,6 +183,7 @@
 						});
 					}
 				})
+					
 			},
 			scroll(e){
 			this.old.scrollTop = e.detail.scrollTop

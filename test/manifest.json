@@ -77,7 +77,7 @@
             "disableHostCheck" : true,
             "proxy" : {
                 "/api" : {
-                    "target" : "http://192.168.0.163:8000", // 需要跨域的域名
+                    "target" : "http://10.166.252.43:8000", // 需要跨域的域名
                     "changeOrigin" : true,
                     "secure" : false,
                     "pathRewrite" : {
