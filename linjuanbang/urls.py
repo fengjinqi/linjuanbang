@@ -19,4 +19,5 @@ from django.urls import path,include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('apps.taobao.urls')),
+    path('jd/', include('apps.jd_app.urls')),
 ]

@@ -239,13 +239,11 @@ class RestApi(object):
         from urllib.parse import urlencode
 
         print(self.__domain+"?"+urlencode(sys_parameters))
-
-        n = 'https://router.jd.com/api?method=jd.union.open.goods.jingfen.query&v=1.0&app_key=dd0e33fbd25eaab95f50cfebc72d8925&sign_method=md5&format=json&timestamp=2019-11-03%2001:03:03&sign=17CB8780BE5A9DAE565D6F65FD9779DA&param_json={%22goodsReq%22:{%22eliteId%22:%2222%22}}'
         #result = requests.get(self.__domain+"?"+urlencode(sys_parameters))
 
         header = self.get_request_header()
         result = requests.request(self.__httpmethod,self.__domain,data=sys_parameters,headers=header,timeout=timeout)
-        print(result.text)
+
         jsonobj = {}
         try:
             jsonobj = result.json()

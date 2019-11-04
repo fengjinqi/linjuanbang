@@ -19,6 +19,13 @@
 				"titleNView":false
 			}
         }
+        ,{
+            "path" : "pages/jd/jd",
+            "style" : {
+            	"navigationBarTitleText": "领卷帮",
+            	"titleNView":false
+            }
+        }
     ],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",

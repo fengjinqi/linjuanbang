@@ -1,3 +1,5 @@
+from datetime import datetime
+
 from django.http import JsonResponse
 from django.shortcuts import render
 
@@ -5,36 +7,64 @@ from django.shortcuts import render
 from django.views.decorators.http import require_GET
 
 import jd
+from apps.jd_app.models import Category, Banner
 from apps.utils.jd import getJDSettings
 
 
-@require_GET
-def getRush(request):
+def category(request):
     """
-    搜索
+    导航
     :param request:
     :return:
     """
-    n=jd.api.UnionOpenGoodsQueryRequest('https://router.jd.com/api')
-    #n=jd.api.UnionOpenGoodsJingfenQueryRequest('https://router.jd.com/api')
-    print(getJDSettings().get('appkey'))
-    n.set_app_info(jd.appinfo('dd0e33fbd25eaab95f50cfebc72d8925','51400be7286e49f4aae8c37b64a7e443'))
+    data = Category.objects.values('pid','name','type').filter(type='1').order_by('-sort')
+    squared  = Category.objects.values('pid','name','type').filter(type='2').order_by('sort')
+    resulte = []
+    obj = []
+    for i in data:
+       obj.append(i)
+    resulte.append(obj)
+    obj = []
+    for i in squared:
+        obj.append(i)
+    resulte.append(obj)
+    return JsonResponse(resulte,safe=False)
+
+
+def get_banner(request):
+    """
+    banner
+    :param request:
+    :return:
+    """
+    obj = Banner.objects.values( 'img', 'title', 'url', 'start_time', 'end_time', 'add_time').filter(
+        end_time__gte=datetime.now())
+    resulte = []
+    for i in obj:
+        resulte.append(i)
+    return JsonResponse(resulte,safe=False)
+
+
+@require_GET
+def getList(request):
+    """
+    jD
+    :param request:
+    :return:
+    """
+    #n=jd.api.UnionOpenGoodsQueryRequest('https://router.jd.com/api')
+    n=jd.api.UnionOpenGoodsJingfenQueryRequest('https://router.jd.com/api')
+    n.set_app_info(jd.appinfo(getJDSettings().get('appkey'),getJDSettings().get('secret')))
     # n.eliteId = 22
     # n.pageIndex = 1
     # n.pageSize = 20
     # n.sortName = 'price'
     # n.sort = 'desc'
     n.goodsReq = {
-        'eliteId':22
+        'eliteId':request.GET.get('type'),
+        'pageIndex':request.GET.get('page',1),
+        'pageSize':20
     }
-    n.goodsReqDTO={
-        'keyword':'手机'
-    }
-    results = None
-    #try:
     results= n.getResponse()
-    #except Exception as e:
-     #   print(e)
-     #   results = e
-
+    print(results)
     return JsonResponse(results)
