@@ -17,7 +17,7 @@
 		 			</swiper-item>
 		 		</swiper>
 				<view class="squared">
-					<text v-for="(item,index) in squared" :key='index' @click="getList(item.pid)">{{item.name}}</text>
+					<text class='squared-text' v-for="(item,index) in squared" :key='index' @click="getList(item.pid)">{{item.name}}</text>
 				</view>	
 		 	</view>
 		 	<view class="view">
@@ -194,7 +194,7 @@
 
 </style>
 <style lang="less">
-@import '../../static/css/comm.less';
+@import '../../static/css/comm.css';
 	.tabs{
 		background-color: #e1251b
 	}
@@ -202,7 +202,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		text{
+		.squared-text{
 			width: 33%;
 			display: flex;
 			justify-content: center;

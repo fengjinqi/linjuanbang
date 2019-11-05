@@ -12,19 +12,19 @@
 		 		<swiper class="swiper" style="height: 90px;" circular ='true'>
 		 			<swiper-item style="height: 90px;" v-if="banner.length>0" v-for="(item,index) in banner" :key='index'>
 		 				<view class="swiper-item uni-bg-red" @click="navigator(item.url)" style="height: 90px;">
-		 						<image :src="item.img" style="height: 90px;" mode="scaleToFill"></image>
+		 						<image class="img"  :src="item.img" style="height: 90px;" mode="scaleToFill"></image>
 		 					</view>
 		 			</swiper-item>
 		 		</swiper>
 				<view class="squared">
-					<text v-for="(item,index) in squared" :key='index' @click="getList(item.pid)">{{item.name}}</text>
+					<text class='squared-text' v-for="(item,index) in squared" :key='index' @click="getList(item.pid)">{{item.name}}</text>
 				</view>	
 		 	</view>
 		 	<view class="view">
 		 		<view class="view-main" @click="navigator(item.couponInfo.couponList.length?item.couponInfo.couponList[0].link:item.pinGouInfo.pingouUrl?item.pinGouInfo.pingouUrl:'https://'+item.materialUrl)" v-for="(item,index) in msg" :key='index' v-if="msg.length>0">
 		 			<view class="view-img">
 					
-		 				<image :src="item.imageInfo.imageList[0].url" mode="scaleToFill"></image>
+		 				<image class="img" :src="item.imageInfo.imageList[0].url" mode="scaleToFill"></image>
 		 			
 		 			</view>
 		 			<view class="view-footer">
@@ -90,7 +90,7 @@
 		created() {
 			this.getBanner()
 			uni.request({
-				url:'/jd/category',
+				url:'https://m.fengjinqi.com/jd/category',
 				method:'GET',
 				success: (res) => {
 					this.category = res.data[0]
@@ -102,7 +102,7 @@
 		methods:{
 			getBanner(){
 				uni.request({
-					url:'/jd/get_banner',
+					url:'https://m.fengjinqi.com/jd/get_banner',
 					method:'GET',
 					success: (res) => {
 						if(res.statusCode==200){
@@ -129,7 +129,7 @@
 				});
 				this.categoryId = type
 				uni.request({
-					url:'/jd/getList',
+					url:'https://m.fengjinqi.com/jd/getList',
 					data:{'type':type},
 					method:'GET',
 					success: (res) => {
@@ -160,7 +160,7 @@
 				
 				this.page++
 				uni.request({
-					url:'/jd/getList',
+					url:'https://m.fengjinqi.com/jd/getList',
 					method:'GET',
 					data:{"type":this.categoryId,'page':this.page},
 					success:(res) => {
@@ -209,7 +209,7 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		text{
+		.squared-text{
 			width: 33%;
 			display: flex;
 			justify-content: center;

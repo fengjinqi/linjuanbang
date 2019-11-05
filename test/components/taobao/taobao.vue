@@ -3,7 +3,7 @@
 		<view class="nav-header">
 			<view class="status_bar">
 				<navigator url="../search/search">
-				<input type="text" disabled='true' placeholder ="搜索" placeholder-style='font-size:12px;text-align:center;' />
+				<input type="text"class="input" disabled='true' placeholder ="搜索" placeholder-style='font-size:12px;text-align:center;' />
 				</navigator>
 			</view>
 			<view class="tabs">     
@@ -32,14 +32,14 @@
 				<swiper class="swiper"  circular ='true'>
 					<swiper-item v-if="banner.length>0" v-for="(item,index) in banner" :key='index'>
 						<view class="swiper-item uni-bg-red" @click="navigator(item.url)">
-								<image :src="item.img" mode="scaleToFill"></image>
+								<image class="img"  :src="item.img" mode="scaleToFill"></image>
 							</view>
 					</swiper-item>
 				</swiper>
 				<view class="view">
 					<view class="view-main" @click="navigator(item.coupon_share_url)" v-for="(item,index) in msg" :key='index' v-if="msg.length>0">
 						<view class="view-img">
-							<image :src="item.pict_url" mode="scaleToFill"></image>
+							<image class="img" :src="item.pict_url" mode="scaleToFill"></image>
 						
 						</view>
 						<view class="view-footer">
@@ -74,7 +74,7 @@
      // height: var(--status-bar-height);
 	  	padding: 5px;
 		padding-top: 11px;
-		input{
+		.input{
 			border-radius: 20px;
 			background: #fff;
 			height: 30px;
@@ -132,11 +132,12 @@
 	  .swiper-item {
 		  height: 150px;
 		  width: 100%;
-		  uni-image{
+		/*  uni-image{
 			  width: 100%;
-		  }
-		  image{
+		  } */
+		  .img{
 			  height: 150px;
+			  width: 100%;
 		  }
 	  }
   }
@@ -151,7 +152,7 @@
 		  .view-img{
 		  	height: 150px;
 			width: 100%;
-			image{
+			.img{
 				width: 100%;
 				height: 150px;
 			}
@@ -269,7 +270,7 @@
 				this.page++
 				var _this = this
 				uni.request({
-					url:'/getHome',
+					url:'https://m.fengjinqi.com/getHome',
 					method:'GET',
 					data:{"id":this.categoryId,'page':this.page},
 					success:(res) => {
@@ -317,7 +318,7 @@
 				    title: '加载中...'
 				});
 				uni.request({
-					url:'/getHome',
+					url:'https://m.fengjinqi.com/getHome',
 					method:'GET',
 					data:{"id":e?e:''},
 					success:(res) => {
@@ -346,7 +347,7 @@
 				    title: '加载中...'
 				});
 				uni.request({
-					url:'/banner',
+					url:'https://m.fengjinqi.com/banner',
 					method:'GET',
 					success: (res) => {
 						uni.hideLoading()
@@ -372,7 +373,7 @@
 				    title: '加载中...'
 				});
 				uni.request({
-					url:'/getCategory',
+					url:'https://m.fengjinqi.com/getCategory',
 					method:'GET',
 					success: (res) => {
 						uni.hideLoading()

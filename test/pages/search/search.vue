@@ -118,7 +118,7 @@
 					this.scrollTop = 0
 				});
 				uni.request({
-					url:'/api/search',
+					url:'https://m.fengjinqi.com/search',
 					method:'GET',
 					data:{"q":this.value},
 					success:(res) => {
@@ -145,7 +145,7 @@
 				this.type=true
 				this.page++;
 				uni.request({
-					url:'/api/search',
+					url:'https://m.fengjinqi.com/search',
 					method:'GET',
 					data:{"q":this.value,'page':this.page},
 					success:(res) => {

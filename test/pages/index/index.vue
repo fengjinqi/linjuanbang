@@ -26,7 +26,7 @@
 		},
 		onLoad() {
 			uni.request({
-				url:'/getType',
+				url:'https://m.fengjinqi.com/getType',
 				method:'GET',
 				success: (res) => {
 					this.tabList=res.data.map(item=>{
