@@ -1,6 +1,6 @@
 {
-    "name" : "test",
-    "appid" : "",
+    "name" : "领卷帮",
+    "appid" : "__UNI__4190FF9",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -56,7 +56,7 @@
     "quickapp" : {},
     /* 小程序特有相关 */
     "mp-weixin" : {
-        "appid" : "",
+        "appid" : "wxa79e809ea36a41a7",
         "setting" : {
             "urlCheck" : false
         },
@@ -77,19 +77,22 @@
             "disableHostCheck" : true,
             "proxy" : {
                 "/api" : {
-                    "target" : "http://10.166.252.43:8000", // 需要跨域的域名
+                    "target" : "http://192.168.0.163:8000/",
                     "changeOrigin" : true,
                     "secure" : false,
                     "pathRewrite" : {
-                        "^/api" : "" //匹配请求路径里面有 /api 替换成 https://testapi.kemiandan.com
+                        "^/api" : ""
                     }
                 }
             }
         },
-        "optimization" : {
-            "treeShaking" : {
-                "enable" : true
-            }
-        }
+        "domain" : "http://m.fengjinqi.com"
     }
 }
+// "optimization" : {
+//     "treeShaking" : {
+//         "enable" : true
+//     }
+// }
+// "domain" : "www.fengjinqi.com"
+

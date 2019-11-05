@@ -26,7 +26,7 @@ conf.read('config.ini')
 SECRET_KEY = '@qzvj*#r!8n$1s-mosei_3o8pt7s4_r=gy4mwi%k)$o3db5my-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
 ALLOWED_HOSTS = ['*']
 
@@ -41,7 +41,8 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'apps.taobao.apps.TaobaoConfig',
-    'apps.jd_app.apps.JdAppConfig'
+    'apps.jd_app.apps.JdAppConfig',
+    'apps.settings.apps.SettingsConfig'
 ]
 
 MIDDLEWARE = [
@@ -141,6 +142,7 @@ STATICFILES_DIRS = (
 # STATIC_ROOT 配置部署的时候才用
 
 STATIC_ROOT = os.path.join(BASE_DIR, "/static/")
+
 MEDIA_URL = "/upload/"   # 媒体文件别名(相对路径) 和 绝对路径
 MEDIA_ROOT = (
     os.path.join(BASE_DIR, 'upload')

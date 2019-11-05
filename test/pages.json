@@ -8,10 +8,7 @@
 			}
 			
 		}
-	    ,{
-            "path" : "component/tabbars/tabbars",
-            "style" : {}
-        }
+	  
         ,{
             "path" : "pages/search/search",
             "style" : {

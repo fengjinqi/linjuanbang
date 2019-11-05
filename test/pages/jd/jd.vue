@@ -21,7 +21,7 @@
 				</view>	
 		 	</view>
 		 	<view class="view">
-		 		<view class="view-main" @click="navigator(item.couponInfo.couponList.length?item.couponInfo.couponList[0].link:item.pinGouInfo.pingouUrl?item.pinGouInfo.pingouUrl:item.materialUrl)" v-for="(item,index) in msg" :key='index' v-if="msg.length>0">
+		 		<view class="view-main" @click="navigator(item.couponInfo.couponList.length?item.couponInfo.couponList[0].link:item.pinGouInfo.pingouUrl?item.pinGouInfo.pingouUrl:'https://'+item.materialUrl)" v-for="(item,index) in msg" :key='index' v-if="msg.length>0">
 		 			<view class="view-img">
 					
 		 				<image :src="item.imageInfo.imageList[0].url" mode="scaleToFill"></image>
@@ -31,7 +31,9 @@
 		 				<text class="text">{{item.skuName}}</text>
 		 				<view class="info">
 							<text style="background: #e1251b;color: #fff;padding: 0px 2px;border-radius: 2px;" v-show="item.owner=='g'">{{item.owner=='g'?'自营':''}}</text>
-		 					<text>原价:<text style="text-decoration: line-through;">¥{{item.priceInfo.price}}</text></text>
+		 					<text v-if="item.couponInfo.couponList.length>0">原价:<text style="text-decoration: line-through;">¥{{item.priceInfo.price}}</text></text>
+							<text v-else-if="item.pinGouInfo.pingouPrice">原价:<text style="text-decoration: line-through;">¥{{item.priceInfo.price}}</text></text>
+							<text v-else style="color: #fb3434;font-weight: bold;">价格:<text>¥{{item.priceInfo.price}}</text></text>
 		 				</view>
 		 				<view class="info" v-if="item.couponInfo.couponList.length>0">
 		 					<text class="price">劵后价:<text style="font-weight: bold;">{{tudu(item.priceInfo.price,item.couponInfo.couponList[0].discount)}}</text></text>
@@ -50,7 +52,7 @@
 </template>
 
 <script>
-	import uniLoadMore from "@/component/uni-load-more.vue"
+	import uniLoadMore from "@/components/uni-load-more.vue"
 	export default {
 		data() {
 			return {
@@ -138,8 +140,6 @@
 				})
 			},
 			navigator(e){
-				console.log(e)
-				return
 				window.location.href=e
 			},
 			getHomePage(){
@@ -149,7 +149,6 @@
 				this.flag=false
 				this.type=true
 				this.page++
-				console.log('==')
 				uni.request({
 					url:'api/jd/getList',
 					method:'GET',
@@ -160,8 +159,8 @@
 						if(res.statusCode==200){
 							let result = res.data.jd_union_open_goods_jingfen_query_response
 							let item = JSON.parse(result.result).data
-							console.log()
-							if(JSON.stringify(item)==JSON.stringify(this.msg.data)){
+				
+							if(JSON.stringify(item)==JSON.stringify(this.msg)){
 								this.type = true
 								this.loading='noMore'
 							}else{

@@ -2,9 +2,50 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650960e0-97d1-48f1-b2de-7ecc9e6499b0" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/apps/settings/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/apps/settings/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/comm.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/css/comm.less" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/chunk-vendors.505e4cc9.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/index.e80b9861.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/pages-index-index.43c0069c.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/pages-jd-jd.e43d33b1.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/js/pages-search-search.b4719174.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/logo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_01.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_01_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_02.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_02_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_03.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_03_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_04.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/icon_04_f.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/jd.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/jdactive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/taobao.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/taobaoactive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/wel-on.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/img/wel.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/js/botoom-list.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/wyg-bottom-tab/js/botoom-list2.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/linjuanbang.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/linjuanbang.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/taobao/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/taobao/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbang/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbang/settings.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbang/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbang/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.rar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/component/tabbars/tabbars.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/component/uni-icons/uni-icons.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/component/uni-load-more.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/component/uni-nav-bar/uni-nav-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/component/uni-status-bar/uni-status-bar.vue" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pages.json" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pages/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/index/index.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pages/jd/jd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/jd/jd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/pages/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/search/search.vue" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,43 +58,91 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="88" column="23" lean-forward="true" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
+            <state relative-caret-position="110">
+              <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/jd/api/base.py">
+        <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6125">
-              <caret line="245" selection-start-line="245" selection-end-line="245" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/top/api/base.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5850">
-              <caret line="234" selection-start-line="234" selection-end-line="235" selection-end-column="42" />
+            <state relative-caret-position="231">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <element signature="e#74#85#0" expanded="true" />
+                <element signature="e#0#28#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/jd_app/views.py">
+        <entry file="file://$PROJECT_DIR$/apps/jd_app/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
-              <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+            <state relative-caret-position="132">
+              <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-2277">
+              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+              <folding>
+                <element signature="e#312#321#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-594" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/apps/settings/views.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="286">
+              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/templates/taobaoIndex.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/linjuanbang/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="121">
+              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+              <folding>
+                <element signature="e#635#667#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/static/js/index.e80b9861.js">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -61,8 +150,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="HTML File" />
         <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -101,27 +190,32 @@
         <option value="$PROJECT_DIR$/jd/api/__init__.py" />
         <option value="$PROJECT_DIR$/jd/__init__.py" />
         <option value="$PROJECT_DIR$/apps/jd_app/apps.py" />
-        <option value="$PROJECT_DIR$/linjuanbang/settings.py" />
         <option value="$PROJECT_DIR$/jd/api/rest/UnionOpenGoodsJingfenQueryRequest.py" />
         <option value="$PROJECT_DIR$/jd/api/rest/__init__.py" />
         <option value="$PROJECT_DIR$/apps/utils/jd.py" />
         <option value="$PROJECT_DIR$/jd/api/rest/KplOpenUserLoginGetuidRequest.py" />
         <option value="$PROJECT_DIR$/apps/taobao/views.py" />
-        <option value="$PROJECT_DIR$/apps/taobao/urls.py" />
-        <option value="$PROJECT_DIR$/linjuanbang/urls.py" />
         <option value="$PROJECT_DIR$/jd/api/base.py" />
         <option value="$PROJECT_DIR$/apps/jd_app/models.py" />
         <option value="$PROJECT_DIR$/apps/jd_app/admin.py" />
         <option value="$PROJECT_DIR$/apps/jd_app/urls.py" />
         <option value="$PROJECT_DIR$/apps/jd_app/views.py" />
+        <option value="$PROJECT_DIR$/apps/settings/apps.py" />
+        <option value="$PROJECT_DIR$/apps/settings/models.py" />
+        <option value="$PROJECT_DIR$/apps/settings/admin.py" />
+        <option value="$PROJECT_DIR$/apps/settings/views.py" />
+        <option value="$PROJECT_DIR$/templates/index.html" />
+        <option value="$PROJECT_DIR$/linjuanbang/urls.py" />
+        <option value="$PROJECT_DIR$/apps/taobao/urls.py" />
+        <option value="$PROJECT_DIR$/linjuanbang/settings.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-279" />
-    <option name="y" value="10" />
+    <option name="x" value="3" />
+    <option name="y" value="6" />
     <option name="width" value="1346" />
-    <option name="height" value="696" />
+    <option name="height" value="693" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -129,58 +223,61 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="linjuanbang" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="taobao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="jd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="jd" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="top" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="top" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="api" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/static" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -192,15 +289,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\linjuanbang\static" />
+      <recent name="C:\Users\lenovo\Desktop\linjuanbang\apps" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\lenovo\Desktop\linjuanbang\static" />
+      <recent name="C:\Users\lenovo\Desktop\linjuanbang" />
+      <recent name="C:\Users\lenovo\Desktop\linjuanbang\templates" />
       <recent name="C:\Users\lenovo\Desktop\linjuanbang\apps\jd_app" />
       <recent name="D:\Users\admin\Desktop\linjuanbang" />
-      <recent name="D:\Users\admin\Desktop\linjuanbang\apps\utils" />
-      <recent name="C:\Users\lenovo\Desktop\linjuanbang\jd\api" />
-      <recent name="C:\Users\lenovo\Desktop\linjuanbang\jd\api\rest" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\lenovo\Desktop\linjuanbang\apps" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -269,9 +367,9 @@
         <env name="PYTHONUNBUFFERED" value="1" />
         <env name="DJANGO_SETTINGS_MODULE" value="linjuanbang.settings" />
       </envs>
-      <option name="SDK_HOME" value="C:\Users\admin\Envs\venv\Scripts\python.exe" />
+      <option name="SDK_HOME" value="" />
       <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
+      <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="launchJavascriptDebuger" value="false" />
@@ -318,21 +416,22 @@
       <workItem from="1572572124733" duration="10640000" />
       <workItem from="1572832480171" duration="11622000" />
       <workItem from="1572868915494" duration="633000" />
+      <workItem from="1572917023257" duration="7744000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="93671000" />
+    <option name="totallyTimeSpent" value="101415000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.2553305" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.25945538" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32903227" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.3285968" />
@@ -340,7 +439,7 @@
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
       <window_info anchor="bottom" id="Run" order="8" weight="0.32903227" />
-      <window_info active="true" anchor="bottom" id="Debug" order="9" visible="true" weight="0.41523606" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.41451612" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -413,22 +512,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/top/api/rest/AlipayXiaodaiUserPermitRequest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/http/response.py" />
-    <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/utils/autoreload.py" />
-    <entry file="file://$PROJECT_DIR$/templates/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
-          <caret line="11" column="9" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-74">
@@ -439,13 +522,6 @@
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/views/decorators/http.py" />
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/apps/registry.py" />
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/forms/models.py" />
-    <entry file="file://$PROJECT_DIR$/templates/taobaoIndex.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="265">
-          <caret line="58" column="28" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="110">
@@ -506,13 +582,6 @@
     <entry file="file://$PROJECT_DIR$/apps/taobao/__init__.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/jd_app/apps.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/top/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -536,13 +605,6 @@
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="87" selection-start-line="87" selection-end-line="87" />
         </state>
       </provider>
     </entry>
@@ -605,23 +667,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="6" column="35" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/linjuanbang/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="158">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Envs/venv/Lib/site-packages/django/core/management/base.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -639,26 +684,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apps/jd_app/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/jd_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="56" column="6" selection-start-line="56" selection-start-column="6" selection-end-line="56" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/apps/jd_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -666,20 +691,6 @@
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="88" column="23" lean-forward="true" selection-start-line="88" selection-start-column="23" selection-end-line="88" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jd/api/base.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6125">
-          <caret line="245" selection-start-line="245" selection-end-line="245" />
         </state>
       </provider>
     </entry>
@@ -692,19 +703,189 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/top/api/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5850">
-          <caret line="234" selection-start-line="234" selection-end-line="235" selection-end-column="42" />
+        <state relative-caret-position="158">
+          <caret line="237" column="32" selection-start-line="237" selection-start-column="21" selection-end-line="237" selection-end-column="32" />
           <folding>
             <element signature="e#74#85#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/jd/api/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="245" selection-start-line="245" selection-end-line="245" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/apps/jd_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="67" column="5" selection-start-line="67" selection-start-column="5" selection-end-line="67" selection-end-column="5" />
+        <state relative-caret-position="-614">
+          <caret line="33" column="24" selection-start-line="33" selection-start-column="24" selection-end-line="33" selection-end-column="24" />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/settings/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/jd_app/apps.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/jd_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="62" selection-start-line="62" selection-end-line="69" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/settings/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="8" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="8" />
+          <folding>
+            <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/settings/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="66">
+          <caret line="3" column="42" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/jd_app/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="146">
+          <caret line="14" selection-start-line="14" selection-end-line="18" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="110">
+          <caret line="5" column="25" selection-start-line="5" selection-start-column="25" selection-end-line="5" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/settings/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Envs/venv/Lib/site-packages/django/http/response.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="498" column="66" selection-start-line="498" selection-start-column="66" selection-end-line="498" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/manifest.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-846" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.55ca58cc.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/requirements.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#6517#12737#1" expanded="true" />
+            <element signature="e#12825#15729#1" expanded="true" />
+            <element signature="e#16430#18335#1" expanded="true" />
+            <element signature="e#35031#40579#1" expanded="true" />
+            <element signature="e#54115#56806#2" expanded="true" />
+            <element signature="e#56848#58903#2" expanded="true" />
+            <element signature="e#64925#65530#2" expanded="true" />
+            <element signature="e#65611#65852#2" expanded="true" />
+            <element signature="e#66914#67383#2" expanded="true" />
+            <element signature="e#67525#67978#2" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/js/index.e80b9861.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="427" lean-forward="true" selection-start-line="4" selection-start-column="427" selection-end-line="4" selection-end-column="427" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/taobaoIndex.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="331">
+          <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linjuanbang/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="121">
+          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+          <folding>
+            <element signature="e#635#667#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="231">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-2277">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+          <folding>
+            <element signature="e#312#321#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-594" />
       </provider>
     </entry>
   </component>

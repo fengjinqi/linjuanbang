@@ -40,7 +40,7 @@
 </template>
 
 <script>
-	import uniLoadMore from "@/component/uni-load-more.vue"
+	import uniLoadMore from "@/components/uni-load-more.vue"
 	export default {
 		data() {
 			return {
