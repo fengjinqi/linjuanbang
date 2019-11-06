@@ -7,16 +7,23 @@
 				"titleNView":false
 			}
 			
-		}
-	  
+		},
+	  {
+	  	"path": "pages/index/taobao",
+	  	"style": {
+	  		"navigationBarTitleText": "领卷帮",
+	  		"titleNView":false
+	  	}
+	  	
+	  }
         ,{
             "path" : "pages/search/search",
             "style" : {
 				"navigationBarTitleText": "领卷帮",
 				"titleNView":false
 			}
-        }
-        ,{
+        },
+		{
             "path" : "pages/jd/jd",
             "style" : {
             	"navigationBarTitleText": "领卷帮",
@@ -39,5 +46,22 @@
 				"query": "" //启动参数，在页面的onLoad函数里面得到
 			}
 		]
+	},
+	"tabBar": {
+	    "color": "#7A7E83",
+	    "selectedColor": "#ff464e",
+	    "borderStyle": "black",
+	    "backgroundColor": "#ffffff",
+	    "list": [{
+	        "pagePath": "pages/index/taobao",
+	        "iconPath": "static/wyg-bottom-tab/img/taobao.png",
+	        "selectedIconPath": "static/wyg-bottom-tab/img/taobaoactive.png",
+	        "text": "淘宝"
+	    }, {
+	        "pagePath": "pages/jd/jd",
+	        "iconPath": "static/wyg-bottom-tab/img/jd.png",
+	        "selectedIconPath": "static/wyg-bottom-tab/img/jdactive.png",
+	        "text": "京东"
+	    }]
 	}
 }

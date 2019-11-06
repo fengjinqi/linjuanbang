@@ -35,8 +35,10 @@
 							<text v-else-if="item.pinGouInfo.pingouPrice">原价:<text style="text-decoration: line-through;">¥{{item.priceInfo.price}}</text></text>
 							<text v-else style="color: #fb3434;font-weight: bold;">价格:<text>¥{{item.priceInfo.price}}</text></text>
 		 				</view>
+
 		 				<view class="info" v-if="item.couponInfo.couponList.length>0">
-		 					<text class="price">劵后价:<text style="font-weight: bold;">{{tudu(item.priceInfo.price,item.couponInfo.couponList[0].discount)}}</text></text>
+								
+		 					<text class="price">劵后价:<text style="font-weight: bold;">{{item.youhui}}</text></text>
 		 					<text class="juan" >{{item.couponInfo.couponList[0].discount}}元劵</text>
 		 				</view>
 						<view class="info" v-else-if="item.pinGouInfo.pingouPrice">
@@ -100,6 +102,9 @@
 			this.getList(22,0)
 		},
 		methods:{
+			getjs(a,b){
+				return ((a*100-b*100)/100).toFixed(1)
+			},
 			getBanner(){
 				uni.request({
 					url:'https://m.fengjinqi.com/jd/get_banner',
@@ -135,8 +140,15 @@
 					success: (res) => {
 						uni.hideLoading()
 						let result = res.data.jd_union_open_goods_jingfen_query_response
-						this.msg = JSON.parse(result.result).data
-						console.log(JSON.parse(result.result).totalCount)
+						let item = JSON.parse(result.result).data
+						this.msg=item.map(data=>{
+							
+							if(data.couponInfo.couponList.length>0){
+								data.youhui=this.getjs(data.priceInfo.price,data.couponInfo.couponList[0].discount)
+							}
+							return data
+						})
+						console.log(this.msg)
 						this.count = Math.ceil(JSON.parse(result.result).totalCount/20)
 					}
 				})
@@ -201,7 +213,7 @@
 
 </style>
 <style lang="less">
-@import '../static/css/comm.css';
+@import '../../static/css/comm.css';
 	.tabs{
 		background-color: #e1251b
 	}

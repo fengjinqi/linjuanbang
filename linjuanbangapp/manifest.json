@@ -72,21 +72,21 @@
         "usingComponents" : true
     },
     "h5" : {
-        "devServer" : {
-            "https" : false,
-            "disableHostCheck" : true,
-            "proxy" : {
-                "/api" : {
-                    "target" : "http://192.168.0.163:8000/",
-                    "changeOrigin" : true,
-                    "secure" : false,
-                    "pathRewrite" : {
-                        "^/api" : ""
-                    }
-                }
-            }
-        },
-        "domain" : "http://m.fengjinqi.com"
+        // "devServer" : {
+        //     "https" : false,
+        //     "disableHostCheck" : true,
+        //     "proxy" : {
+        //         "/api" : {
+        //             "target" : "http://192.168.0.163:8000/",
+        //             "changeOrigin" : true,
+        //             "secure" : false,
+        //             "pathRewrite" : {
+        //                 "^/api" : ""
+        //             }
+        //         }
+        //     }
+        // },
+        "domain" : "https://m.fengjinqi.com"
     }
 }
 // "optimization" : {

@@ -1,8 +1,8 @@
 <template>
 	<view class="content">
-		<taobao v-if="name.name=='淘宝'"></taobao>
+<!-- 		<taobao v-if="name.name=='淘宝'"></taobao>
 		<j-d v-if="name.name=='京东'"></j-d>
-		<wyg-bottom-tab tabIndex=1 :tabListParent="tabList" v-if="tabList.length>0"></wyg-bottom-tab>
+		<wyg-bottom-tab tabIndex=1 :tabListParent="tabList" v-if="tabList.length>0"></wyg-bottom-tab> -->
 	</view>
 
 </template>
