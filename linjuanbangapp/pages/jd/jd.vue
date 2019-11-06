@@ -72,7 +72,8 @@
 				flag:true,
 				old: {
 					scrollTop: 0
-				}
+				},
+				ring:null
 			};
 		},
 		computed:{
@@ -83,13 +84,29 @@
 			},
 			height(){
 				var sys = uni.getSystemInfoSync();
-				return (sys.windowHeight-80)+'px'
+				return (sys.windowHeight-40)+'px'
 			}
 		},
 		components:{
 			uniLoadMore
 		},
-		created() {
+		onLoad() {
+			switch(uni.getSystemInfoSync().platform){
+			    case 'android':
+			       console.log('运行Android上')
+				   this.ring = 'android'
+			       break;
+			    case 'ios':
+			       console.log('运行iOS上')
+				   this.ring = 'ios'
+			       break;
+				case 'devtools':
+					this.ring = 'devtools'
+					break;
+			    default:
+			       console.log('运行在开发者工具上')
+			       break;
+			}
 			this.getBanner()
 			uni.request({
 				url:'https://m.fengjinqi.com/jd/category',
@@ -99,7 +116,7 @@
 					this.squared = res.data[1]
 				}
 			})
-			this.getList(22,0)
+			this.getList(22,0,true)
 		},
 		methods:{
 			getjs(a,b){
@@ -122,9 +139,9 @@
 					}
 				})
 			},
-			getList(type,index){
+			getList(type,index,n){
 				this.active = index
-				uni.showLoading({
+				if(!n)uni.showLoading({
 				    title: '加载中...'
 				});
 				this.page=1
@@ -150,11 +167,36 @@
 						})
 						console.log(this.msg)
 						this.count = Math.ceil(JSON.parse(result.result).totalCount/20)
+					},
+					fail: () => {
+						uni.hideLoading()
+						uni.showToast({
+						    title: '网络错误,请稍后重试',
+							icon:'none'
+						});
 					}
 				})
 			},
 			navigator(e){
-				window.location.href=e
+				if(this.ring == 'ios'||this.ring == 'android'){
+					var item={
+						url:e
+					}
+					uni.navigateTo({
+					    url: '/pages/webview/webview?item='+ encodeURIComponent(JSON.stringify(item))
+					});
+				}else if(this.ring == 'devtools'){
+					var item={
+						url:e
+					}
+					uni.navigateTo({
+					    url: '/pages/webview/webview?item='+ encodeURIComponent(JSON.stringify(item))
+					});
+				}
+				else{
+					window.location.href=e
+				}
+				
 			},
 			getHomePage(){
 				console.log(this.count)

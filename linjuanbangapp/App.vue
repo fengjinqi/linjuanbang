@@ -14,4 +14,9 @@
 
 <style>
 	/*每个页面公共css */
+	body{
+		/* width: 600px; */
+		max-width: 600px;
+		margin: 0 auto;
+	}
 </style>

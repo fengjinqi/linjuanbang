@@ -8,18 +8,18 @@
 			</view>
 			<view class="tabs">     
 				<scroll-view class="scroll-view_H scroll-h" scroll-x="true" show-scrollbar="false" >
-					<view class="nav-header uni-tab-item " v-if="category.length>0">
-						<text :class ="[{ active: active==1 },'uni-tab-item-title']" @click="getInit(category[0].comprehensive,1)">综合</text>
-						<text :class ="[{ active: active==2 },'uni-tab-item-title']"  @click="getInit(category[0].shoe,2)">鞋包配饰</text>
-						<text :class ="[{ active: active==3 },'uni-tab-item-title']"  @click="getInit(category[0].mother,3)">母婴</text>
-						<text :class ="[{ active: active==4 },'uni-tab-item-title']"  @click="getInit(category[0].ladies,4)">女装</text>
-						<text :class ="[{ active: active==5 },'uni-tab-item-title']"  @click="getInit(category[0].makeup,5)">美妆个护</text>
-						<text :class ="[{ active: active==6 },'uni-tab-item-title']"  @click="getInit(category[0].food,6)">食品</text>
-						<text :class ="[{ active: active==7 },'uni-tab-item-title']"  @click="getInit(category[0].mens,7)">男装</text>
-						<text :class ="[{ active: active==8 },'uni-tab-item-title']"  @click="getInit(category[0].digita,8)">数码家电</text>
-						<text :class ="[{ active: active==9 },'uni-tab-item-title']"  @click="getInit(category[0].underwear,9)">内衣</text>
-						<text :class ="[{ active: active==10 },'uni-tab-item-title']"  @click="getInit(category[0].furnishing,10)">家居家装</text>
-						<text :class ="[{ active: active==11 },'uni-tab-item-title']"  @click="getInit(category[0].sports,11)">运动户外</text>
+					<view class=" uni-tab-item " v-if="category.length>0">
+						<text :class ="[{ active: active==1 },'uni-tab-item-title']" @click="getInit(category[0].comprehensive,1,true)">综合</text>
+						<text :class ="[{ active: active==2 },'uni-tab-item-title']"  @click="getInit(category[0].shoe,2,true)">鞋包配饰</text>
+						<text :class ="[{ active: active==3 },'uni-tab-item-title']"  @click="getInit(category[0].mother,3,true)">母婴</text>
+						<text :class ="[{ active: active==4 },'uni-tab-item-title']"  @click="getInit(category[0].ladies,4,true)">女装</text>
+						<text :class ="[{ active: active==5 },'uni-tab-item-title']"  @click="getInit(category[0].makeup,5,true)">美妆个护</text>
+						<text :class ="[{ active: active==6 },'uni-tab-item-title']"  @click="getInit(category[0].food,6,true)">食品</text>
+						<text :class ="[{ active: active==7 },'uni-tab-item-title']"  @click="getInit(category[0].mens,7,true)">男装</text>
+						<text :class ="[{ active: active==8 },'uni-tab-item-title']"  @click="getInit(category[0].digita,8,true)">数码家电</text>
+						<text :class ="[{ active: active==9 },'uni-tab-item-title']"  @click="getInit(category[0].underwear,9,true)">内衣</text>
+						<text :class ="[{ active: active==10 },'uni-tab-item-title']"  @click="getInit(category[0].furnishing,10,true)">家居家装</text>
+						<text :class ="[{ active: active==11 },'uni-tab-item-title']"  @click="getInit(category[0].sports,11,true)">运动户外</text>
 					</view>
 				</scroll-view>
 			 </view>
@@ -83,8 +83,10 @@
   }
  
   .scroll-h {
+	  max-width: 600px;
+	
       width: 750upx;
-      height: 80upx;
+      height: 40px;
       flex-direction: row;
       /* #ifndef APP-PLUS */
       white-space: nowrap;
@@ -100,6 +102,7 @@
       display: inline-block;
       /* #endif */
       flex-wrap: nowrap;
+	     font-size: 14px !important;
    
   }
   
@@ -111,15 +114,15 @@
 	  padding-left: 24upx;
 	  padding-right: 24upx;
       color: #fff;
-      font-size: 14px;
-      height: 80upx;
-      line-height: 80upx;
+      font-size: 14px !important;
+      height:40px;
+      line-height:40px;
       flex-wrap: nowrap;
       /* #ifndef APP-PLUS */
       white-space: nowrap;
       /* #endif */
 	 &.active{
-		 border-bottom: 2px solid #fff;
+		 // border-bottom: 2px solid #fff;
 		 box-sizing: border-box;
 		 font-weight: bold;
 	 }
@@ -237,7 +240,8 @@
 				active:1,
 				old: {
 					scrollTop: 0
-				}
+				},
+				ring:null
 			}
 		},
 		components:{
@@ -252,13 +256,31 @@
 			},
 			height(){
 				var sys = uni.getSystemInfoSync();
-				return (sys.windowHeight-125)+'px'
+				return (sys.windowHeight-86)+'px'
 			}
 		},
-		created() {
+		onLoad() {
+			switch(uni.getSystemInfoSync().platform){
+			    case 'android':
+			       console.log('运行Android上')
+				   this.ring = 'android'
+			       break;
+			    case 'ios':
+			       console.log('运行iOS上')
+				   this.ring = 'ios'
+			       break;
+				case 'devtools':
+					this.ring = 'devtools'
+					break;
+			    default:
+			       console.log('运行在开发者工具上')
+			       break;
+			}
 			this.getBanner()
 			this.getCategory()
 			this.getInit()
+			
+			console.log(uni.getSystemInfoSync().platform)
 		},
 		methods: {
 			getHomePage(e){
@@ -303,7 +325,7 @@
 					}
 				})
 			},
-			getInit(e,n){
+			getInit(e,n,type){
 				this.page=1
 				if(e){
 					this.categoryId = e
@@ -314,7 +336,7 @@
 					
 				}
 				if(n)this.active=n
-				uni.showLoading({
+				if(type)uni.showLoading({
 				    title: '加载中...'
 				});
 				uni.request({
@@ -334,6 +356,7 @@
 						}
 					},
 					fail: () => {
+						uni.hideLoading()
 						this.type=false
 						uni.showToast({
 						    title: '网络错误,请稍后重试',
@@ -395,7 +418,16 @@
 				})
 			},
 			navigator(e){
-				window.location.href=e
+				if(this.ring == 'ios'||this.ring == 'android'){
+					var item={
+						url:e
+					}
+					uni.navigateTo({
+					    url: '/pages/webview/webview?item='+ encodeURIComponent(JSON.stringify(item))
+					});
+				}else{
+					window.location.href=e
+				}
 			}
 			,scroll(e){
 				this.old.scrollTop = e.detail.scrollTop
