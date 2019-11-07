@@ -8,7 +8,7 @@
 			</view>
 			<view class="tabs">     
 				<scroll-view class="scroll-view_H scroll-h" scroll-x="true" show-scrollbar="false" >
-					<view class=" uni-tab-item " v-if="category.length>0">
+					<view class=" uni-tab-item " :style="ring!='other'?style:''" v-if="category.length>0" >
 						<text :class ="[{ active: active==1 },'uni-tab-item-title']" @click="getInit(category[0].comprehensive,1,true)">综合</text>
 						<text :class ="[{ active: active==2 },'uni-tab-item-title']"  @click="getInit(category[0].shoe,2,true)">鞋包配饰</text>
 						<text :class ="[{ active: active==3 },'uni-tab-item-title']"  @click="getInit(category[0].mother,3,true)">母婴</text>
@@ -85,11 +85,11 @@
   .scroll-h {
 	  max-width: 600px;
 	
-      width: 750upx;
-      height: 40px;
-      flex-direction: row;
+     // width: 750upx;
+     // height: 40px;
+      //flex-direction: row;
       /* #ifndef APP-PLUS */
-      white-space: nowrap;
+      //white-space: nowrap;
       /* #endif */
       /* flex-wrap: nowrap; */
       /* border-color: #cccccc;
@@ -99,28 +99,24 @@
   
   .uni-tab-item {
       /* #ifndef APP-PLUS */
-      display: inline-block;
+     // display: inline-block;
       /* #endif */
-      flex-wrap: nowrap;
-	     font-size: 14px !important;
+	  white-space: nowrap;
+	      font-size: 14px;
+		  overflow-x: auto;
+      //flex-wrap: nowrap;
+	    
    
   }
   
   .uni-tab-item-title {
-	  /* #ifndef APP-PLUS */
-	  display: inline-block;
-	  /* #endif */
-	  flex-wrap: nowrap;
-	  padding-left: 24upx;
-	  padding-right: 24upx;
+	
+	 
+	 padding: 0 12px;
       color: #fff;
       font-size: 14px !important;
-      height:40px;
-      line-height:40px;
-      flex-wrap: nowrap;
-      /* #ifndef APP-PLUS */
-      white-space: nowrap;
-      /* #endif */
+     display: inline-block;
+
 	 &.active{
 		 // border-bottom: 2px solid #fff;
 		 box-sizing: border-box;
@@ -241,7 +237,11 @@
 				old: {
 					scrollTop: 0
 				},
-				ring:null
+				ring:null,
+				style:{
+					height:'40px',
+					lineHeight:'40px'
+				}
 			}
 		},
 		components:{
@@ -273,6 +273,7 @@
 					this.ring = 'devtools'
 					break;
 			    default:
+				this.ring =uni.getSystemInfoSync().platform
 			       console.log('运行在开发者工具上')
 			       break;
 			}
