@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650960e0-97d1-48f1-b2de-7ecc9e6499b0" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/test/components/jd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/jd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/components/taobao/taobao.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/components/taobao/taobao.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pages/index/index.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/index/index.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pages/jd/jd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/jd/jd.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/pages/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/test/pages/search/search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/static/css/comm.css" beforeDir="false" afterPath="$PROJECT_DIR$/test/static/css/comm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/static/css/comm.less" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbangapp/App.vue" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/App.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbangapp/pages/index/taobao.vue" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/pages/index/taobao.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbangapp/pages/jd/jd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/pages/jd/jd.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbangapp/pages/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/pages/search/search.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/linjuanbangapp/static/css/comm.css" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/static/css/comm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/comm.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/comm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="110">
@@ -33,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="175">
               <caret line="11" selection-start-line="11" selection-end-line="11" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
@@ -45,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/jd_app/apps.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
+            <state relative-caret-position="150">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
             </state>
           </provider>
@@ -54,27 +54,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="550">
-              <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+            <state relative-caret-position="625">
+              <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
               <folding>
                 <element signature="e#312#321#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/static/admin/js/admin/DateTimeShortcuts.js">
-          <provider selected="true" editor-type-id="text-editor" />
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/apps/settings/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="13" column="19" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/taobaoIndex.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1342">
+            <state relative-caret-position="1525">
               <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
             </state>
           </provider>
@@ -92,18 +75,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/linjuanbang/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="418">
-              <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+            <state relative-caret-position="550">
+              <caret line="30" selection-start-line="30" selection-end-line="30" />
               <folding>
                 <element signature="e#635#667#0" expanded="true" />
               </folding>
             </state>
           </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/static/js/index.e80b9861.js">
-          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -185,53 +163,7 @@
     </navigator>
     <panes>
       <pane id="ProjectPane" />
-      <pane id="Scope">
-        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
-          <expand>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="linjuanbang" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="static" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="js" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="admin" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-            <path>
-              <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
-              <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
-              <item name="templates" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -322,8 +254,8 @@
       <method v="2" />
     </configuration>
     <list>
-      <item itemvalue="Django server.linjuanbang" />
       <item itemvalue="Python.tests" />
+      <item itemvalue="Django server.linjuanbang" />
     </list>
     <recent_temporary>
       <list>
@@ -362,13 +294,14 @@
     <option name="totallyTimeSpent" value="102071000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1066" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.25642964" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.26226014" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.2962963" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.32832617" />
       <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="3" />
       <window_info anchor="bottom" id="Python Console" order="4" weight="0.3285968" />
@@ -702,11 +635,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/manifest.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-846" />
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/test/manifest.json" />
     <entry file="file://$PROJECT_DIR$/static/js/index.55ca58cc.js" />
     <entry file="file://$PROJECT_DIR$/requirements.txt" />
     <entry file="file://$PROJECT_DIR$/static/index.css" />
@@ -732,7 +661,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="175">
           <caret line="11" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
@@ -742,15 +671,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/jd_app/apps.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
+        <state relative-caret-position="150">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/linjuanbang/settings.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="550">
-          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        <state relative-caret-position="625">
+          <caret line="28" column="12" selection-start-line="28" selection-start-column="12" selection-end-line="28" selection-end-column="12" />
           <folding>
             <element signature="e#312#321#0" expanded="true" />
           </folding>
@@ -759,15 +688,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/templates/taobaoIndex.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1342">
+        <state relative-caret-position="1525">
           <caret line="61" column="12" selection-start-line="61" selection-start-column="12" selection-end-line="61" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/linjuanbang/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="25" column="36" selection-start-line="25" selection-start-column="36" selection-end-line="25" selection-end-column="36" />
+        <state relative-caret-position="550">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
           <folding>
             <element signature="e#635#667#0" expanded="true" />
           </folding>

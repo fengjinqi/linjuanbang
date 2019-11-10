@@ -3,7 +3,7 @@
 		<view class="nav-header">
 			<view class="status_bar">
 				<navigator url="../search/search">
-				<input type="text"class="input" disabled='true' placeholder ="搜索" placeholder-style='font-size:12px;text-align:center;' />
+				<input type="text" class="input" disabled='true' placeholder ="搜索" placeholder-style='font-size:12px;text-align:center;' />
 				</navigator>
 			</view>
 			<view class="tabs">     
@@ -29,7 +29,7 @@
 		
 		<view class="">
 			<scroll-view scroll-y="true" @scroll="scroll" :scroll-top="scrollTop" :style="{height:height}" @scrolltolower='getHomePage'>
-				<swiper class="swiper"  circular ='true'>
+				<swiper class="swiper"  circular ='true' autoplay='true'>
 					<swiper-item v-if="banner.length>0" v-for="(item,index) in banner" :key='index'>
 						<view class="swiper-item uni-bg-red" @click="navigator(item.url)">
 								<image class="img"  :src="item.img" mode="scaleToFill"></image>
@@ -64,11 +64,7 @@
 <style scoped lang="scss">
 	.nav-header{
 		background: #ff464e;
-		height: 86px;
-		input{
-		
-		
-		}
+	
 	}
   .status_bar {
      // height: var(--status-bar-height);
@@ -98,13 +94,12 @@
   }
   
   .uni-tab-item {
-      /* #ifndef APP-PLUS */
-     // display: inline-block;
-      /* #endif */
-	  white-space: nowrap;
-	      font-size: 14px;
-		  overflow-x: auto;
-      //flex-wrap: nowrap;
+         white-space: nowrap;
+         font-size: 14px;
+         height: 40px;
+         display: inline-block;
+         line-height: 40px;
+         overflow-x: auto;
 	    
    
   }
@@ -186,11 +181,11 @@
 						  position: absolute;
 						      left: -4px;
 						      top: 50%;
-						      margin-top: -0.1875rem;
+						      margin-top: -4px;
 						      background: #fff;
 						      display: block;
-						      width: 0.375rem;
-						      height: 0.375rem;
+						      width: 8px;
+						      height:8px;
 						      content: "";
 						      border-radius: 0.625rem;
 							  left: auto;
@@ -200,11 +195,11 @@
 						      position: absolute;
 						      left: -4px;
 						      top: 50%;
-						      margin-top: -0.1875rem;
+						      margin-top: -4px;
 						      background: #fff;
 						      display: block;
-						      width: 0.375rem;
-						      height: 0.375rem;
+						      width: 8px;
+						      height:8px;
 						      content: "";
 						      border-radius: 0.625rem;
 					  }
@@ -215,6 +210,7 @@
 	  }
 	  
   }
+
 </style>
 <script>
 	import uniLoadMore from "@/components/uni-load-more.vue"
@@ -241,6 +237,9 @@
 				style:{
 					height:'40px',
 					lineHeight:'40px'
+				},
+				header:{
+					height:' 86px'
 				}
 			}
 		},
@@ -256,7 +255,7 @@
 			},
 			height(){
 				var sys = uni.getSystemInfoSync();
-				return (sys.windowHeight-86)+'px'
+				return (sys.windowHeight-90)+'px'
 			}
 		},
 		onLoad() {

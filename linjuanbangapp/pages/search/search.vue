@@ -4,7 +4,7 @@
 			<view class="status_bar">
 				<text @click="black" class="uni-icon uni-icon-back" style="font-size: 24px;color: #fff;"></text>
 				<input type="text" class="input" placeholder ="搜索" v-model="value" :focus='focus' placeholder-style='font-size:12px;text-align:center;' />
-				<text style="color: #fff;padding: 5px;" @click ="search(false)">搜索</text>
+				<text style="color: #fff;padding: 5px;font-size: 16px;" @click ="search(false)">搜索</text>
 			</view>
 			
 		</view>
@@ -89,7 +89,26 @@
 				this.old.scrollTop = e.detail.scrollTop
 			},
 			black(){
-				uni.navigateBack();
+				//uni.navigateBack();
+				// #ifdef H5  
+				                let canBack = true  
+				                const pages = getCurrentPages()  
+				                // 有可返回的页面则直接返回，uni.navigateBack默认返回失败之后会自动刷新页面 ，无法继续返回  
+				                if (pages.length > 1) {  
+				                    uni.navigateBack(1)  
+				                    return;  
+				                }  
+				                // vue router 可以返回uni.navigateBack失败的页面 但是会重新加载  
+				                let a = this.$router.go(-1)  
+				                // router.go失败之后则重定向到首页  
+				                if (a == undefined) {  
+				                    uni.reLaunch({  
+				                        url: "/pages/tabbar/index"  
+				                    })  
+				                }  
+				                return;  
+				                // #endif  
+				                uni.navigateBack(1)  
 			},
 			navigator(e){
 				window.location.href=e
@@ -224,6 +243,7 @@
 		padding-top: 11px;
 		display: flex;
 		justify-content: space-between;
+		align-items: center;
 		input{
 			border-radius: 20px;
 			background: #fff;

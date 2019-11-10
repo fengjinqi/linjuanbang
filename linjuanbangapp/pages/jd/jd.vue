@@ -1,7 +1,7 @@
 <template>
 	<view>
 		<view class="tabs">
-			<scroll-view class="scroll-view_H scroll-h" scroll-x="true" show-scrollbar="false" >
+			<scroll-view class="scroll-view_H scroll-h" scroll-x="true" show-scrollbar="false" :style="ring!='other'?style:''">
 				<view class="nav-header uni-tab-item " v-if="category.length>0">
 					<text :class="[{ active: active==index },'uni-tab-item-title']" v-for="(item,index) in category" :key='index' @click="getList(item.pid,index)">{{item.name}}</text>
 				</view>
@@ -9,10 +9,10 @@
 		 </view>
 		 <scroll-view scroll-y="true" @scroll="scroll" :scroll-top="scrollTop" :style="{height:height}" @scrolltolower='getHomePage'>
 		 	<view class="">
-		 		<swiper class="swiper" style="height: 90px;" circular ='true'>
-		 			<swiper-item style="height: 90px;" v-if="banner.length>0" v-for="(item,index) in banner" :key='index'>
-		 				<view class="swiper-item uni-bg-red" @click="navigator(item.url)" style="height: 90px;">
-		 						<image class="img"  :src="item.img" style="height: 90px;" mode="scaleToFill"></image>
+		 		<swiper class="swiper"  circular ='true' autoplay='true'>
+		 			<swiper-item  v-if="banner.length>0" v-for="(item,index) in banner" :key='index'>
+		 				<view class="swiper-item uni-bg-red" @click="navigator(item.url)" >
+		 						<image class="img"  :src="item.img"  mode="scaleToFill"></image>
 		 					</view>
 		 			</swiper-item>
 		 		</swiper>
@@ -73,7 +73,10 @@
 				old: {
 					scrollTop: 0
 				},
-				ring:null
+				ring:null,
+				style:{
+					   height: '40px'
+				}
 			};
 		},
 		computed:{
@@ -104,6 +107,7 @@
 					this.ring = 'devtools'
 					break;
 			    default:
+					this.ring =uni.getSystemInfoSync().platform
 			       console.log('运行在开发者工具上')
 			       break;
 			}
@@ -255,7 +259,159 @@
 
 </style>
 <style lang="less">
-@import '../../static/css/comm.css';
+//@import '../../static/css/comm.css';
+
+.status_bar {
+     // height: var(--status-bar-height);
+	  	padding: 5px;
+		padding-top: 11px;
+		.input{
+			border-radius: 20px;
+			background: #fff;
+			height: 30px;
+			line-height: 30px;
+		}
+  }
+ 
+  .scroll-h {
+	  max-width: 600px;
+	
+	   font-size: 14px;
+     // width: 750upx;
+   
+      //flex-direction: row;
+      /* #ifndef APP-PLUS */
+      //white-space: nowrap;
+      /* #endif */
+      /* flex-wrap: nowrap; */
+      /* border-color: #cccccc;
+  	border-bottom-style: solid;
+  	border-bottom-width: 1px; */
+  }
+  
+  .uni-tab-item {
+      /* #ifndef APP-PLUS */
+     // display: inline-block;
+      /* #endif */
+	  white-space: nowrap;
+	      font-size: 14px;
+		      height: 40px;
+			  display: inline-block;
+			  line-height: 40px;
+		  overflow-x: auto;
+      //flex-wrap: nowrap;
+	    
+   
+  }
+  
+  .uni-tab-item-title {
+	
+	 
+	 padding: 0 12px;
+      color: #fff;
+      font-size: 14px !important;
+     display: inline-block;
+
+	 &.active{
+		 // border-bottom: 2px solid #fff;
+		 box-sizing: border-box;
+		 font-weight: bold;
+	 }
+  }
+  
+  .uni-tab-item-title-active {
+      color: #007AFF;
+  }
+  .swiper{
+  	  .swiper-item {
+  		  height: 150px;
+  		  width: 100%;
+  		/*  uni-image{
+  			  width: 100%;
+  		  } */
+  		  .img{
+  			  height: 150px;
+  			  width: 100%;
+  		  }
+  	  }
+  }
+  .view{
+  	  display: flex;
+  	  flex-wrap: wrap;
+  	  justify-content: space-between;
+  	  padding: 0 10px;
+  	  .view-main{
+  		  width: 48%;
+  		  padding: 7px 0;
+  		  .view-img{
+  		  	height: 150px;
+  			width: 100%;
+  			.img{
+  				width: 100%;
+  				height: 150px;
+  			}
+  		  }
+  		  .view-footer{
+  			   font-size: 13px;
+  			  .text{
+  				  font-size: 13px;
+  				  overflow: hidden;
+  				  text-overflow: ellipsis;
+  				  display: -webkit-box;
+  				  -webkit-line-clamp: 2;
+  				  -webkit-box-orient: vertical;
+  				  color: #323232;
+  				  margin-top: 5px;
+  			  }
+  			  .info{
+  				  display: flex;
+  				  justify-content: space-between;
+  				  color: #999;
+  				  margin-top: 5px;
+  				  .price{
+  					  color: #fb3434;
+  				  }
+  				  .juan{
+  					  padding: 2px 6px;
+  					  color: #fff;
+  					  background: linear-gradient(to left,#FF1F1F 0,#FBAA58 100%);
+  					  z-index: 1;
+  					  position: relative;
+  					  &:before{
+  						  position: absolute;
+  						      left: -4px;
+  						      top: 50%;
+  						    margin-top: -4px;
+  						    background: #fff;
+  						    display: block;
+  						    width: 8px;
+  						    height:8px;
+  						      content: "";
+  						      border-radius: 0.625rem;
+  							  left: auto;
+  							      right: -4px;
+  					  }
+  					  &:after{
+  						      position: absolute;
+  						      left: -4px;
+  						      top: 50%;
+  						     margin-top: -4px;
+  						     background: #fff;
+  						     display: block;
+  						     width: 8px;
+  						     height:8px;
+  						      content: "";
+  						      border-radius: 0.625rem;
+  					  }
+  				  }
+  				  
+  			  }
+  		  }
+  	  }
+  	  
+  }
+  
+  
 	.tabs{
 		background-color: #e1251b
 	}

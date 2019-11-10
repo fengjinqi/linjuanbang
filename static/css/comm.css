@@ -9,6 +9,7 @@
   /* border-color: #cccccc;
   	border-bottom-style: solid;
   	border-bottom-width: 1px; */
+	
 }
 .uni-tab-item {
   /* #ifndef APP-PLUS */
@@ -43,11 +44,12 @@
   height: 150px;
   width: 100%;
 }
-.swiper .swiper-item uni-image {
+/* .swiper .swiper-item uni-image {
   width: 100%;
-}
-.swiper .swiper-item image {
+} */
+.swiper .swiper-item .img {
   height: 150px;
+   width: 100%;
 }
 .view {
   display: flex;
@@ -63,7 +65,7 @@
   height: 150px;
   width: 100%;
 }
-.view .view-main .view-img image {
+.view .view-main .view-img .img {
   width: 100%;
   height: 150px;
 }

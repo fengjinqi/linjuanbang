@@ -18,5 +18,6 @@
 		/* width: 600px; */
 		max-width: 600px;
 		margin: 0 auto;
+		font-size: 14px;
 	}
 </style>
