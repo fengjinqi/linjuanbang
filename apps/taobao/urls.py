@@ -8,4 +8,5 @@ urlpatterns = [
     path('banner', views.getTaoBanners),
     path('getCategory', views.getCategory),
     path('getHome', views.getHome),
+    path('getTbkTpwd', views.getTbkTpwd),
 ]

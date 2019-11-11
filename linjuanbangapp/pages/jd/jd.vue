@@ -228,7 +228,7 @@
 							let result = res.data.jd_union_open_goods_jingfen_query_response
 							let item = JSON.parse(result.result).data
 							console.log(item)
-							
+								this.msg = []
 								this.msg = this.msg.concat(item)
 						
 						}else{

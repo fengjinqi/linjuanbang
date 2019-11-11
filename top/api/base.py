@@ -235,24 +235,25 @@ class RestApi(object):
 
         header = self.get_request_header()
         result = requests.request(self.__httpmethod,self.__domain,data=sys_parameters,headers=header,timeout=timeout)
-        print(result.status_code, '===', result.text)
+        #print(result.status_code, '===', result.text)
         if result.status_code is not 200:
             raise RequestException('invalid http status ' + str(result.status_code) + ',detail body:' + result.text)
         jsonobj = result.json()
 
-        if 'error_response' in jsonobj:
-            error = TopException()
-            if P_CODE in jsonobj["error_response"]:
-                error.errorcode = jsonobj["error_response"][P_CODE]
-            if P_MSG in jsonobj["error_response"]:
-                error.message = jsonobj["error_response"][P_MSG]
-            if P_SUB_CODE in jsonobj["error_response"]:
-                error.subcode = jsonobj["error_response"][P_SUB_CODE]
-            if P_SUB_MSG in jsonobj["error_response"]:
-                error.submsg = jsonobj["error_response"][P_SUB_MSG]
-            error.application_host = result.headers.get("Application-Host", "")
-            error.service_host = result.headers.get("Location-Host", "")
-            raise error
+        # if 'error_response' in jsonobj:
+        #     error = TopException()
+        #     if P_CODE in jsonobj["error_response"]:
+        #         error.errorcode = jsonobj["error_response"][P_CODE]
+        #     if P_MSG in jsonobj["error_response"]:
+        #         error.message = jsonobj["error_response"][P_MSG]
+        #     if P_SUB_CODE in jsonobj["error_response"]:
+        #         error.subcode = jsonobj["error_response"][P_SUB_CODE]
+        #     if P_SUB_MSG in jsonobj["error_response"]:
+        #         error.submsg = jsonobj["error_response"][P_SUB_MSG]
+        #     error.application_host = result.headers.get("Application-Host", "")
+        #     error.service_host = result.headers.get("Location-Host", "")
+        #     raise error
+        #
         return jsonobj
     
     

@@ -111,31 +111,22 @@ def getSearch(request):
     return JsonResponse(results)
 
 
-# @require_GET
-# def getRush(request):
-#     """
-#     搜索
-#     :param request:
-#     :return:
-#     """
-#     req=top.api.TbkContentGetRequest('https://eco.taobao.com/router/rest')
-#     req.set_app_info(top.appinfo(getTaoSettings().get('appkey'),getTaoSettings().get('secret')))
-#     req.adzone_id = int(getTaoSettings().get('adzone_id'))
-#     req.type = 1
-#     #req.before_timestamp = 1491454244598
-#     req.count = 10
-#     req.cid = 2
-#     req.image_width = 300
-#     req.image_height = 300
-#     req.content_set = 1
-#     results = None
-#     try:
-#         results= req.getResponse()
-#     except Exception as e:
-#         print(e)
-#         results = e
-#
-#     return JsonResponse(results)
+@require_GET
+def getTbkTpwd(request):
+    req = top.api.TbkTpwdCreateRequest('https://eco.taobao.com/router/rest')
+    req.set_app_info(top.appinfo(getTaoSettings().get('appkey'), getTaoSettings().get('secret')))
 
+    req.text = request.GET.get('text')
+    req.url =  request.GET.get('url')
+    req.logo =  request.GET.get('logo')
+
+    results = None
+    try:
+        results = req.getResponse()
+        #print(results)
+    except Exception as e:
+        results = e
+        print(e)
+    return JsonResponse(results)
 
 

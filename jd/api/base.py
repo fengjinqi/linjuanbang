@@ -238,7 +238,7 @@ class RestApi(object):
         sys_parameters[P_SIGN] = sign(self.__secret, sys_parameters)
         from urllib.parse import urlencode
 
-        print(self.__domain+"?"+urlencode(sys_parameters))
+        #print(self.__domain+"?"+urlencode(sys_parameters))
         #result = requests.get(self.__domain+"?"+urlencode(sys_parameters))
 
         header = self.get_request_header()

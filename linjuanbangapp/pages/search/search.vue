@@ -29,7 +29,8 @@
 							<text class="price">劵后价:¥{{tudu(item.zk_final_price,item.coupon_amount)}}</text>
 						</view>
 						<view class="main-right">
-							<text>{{item.coupon_amount}}元卷</text>
+							<text class="price">{{item.coupon_amount}}元卷</text>
+							<text class="kl" @click.stop="searchKl(item)">分享淘口令</text>
 						</view>
 					</view>
 				</view>
@@ -85,6 +86,29 @@
 		},
 		components: {uniLoadMore},
 		methods:{
+			searchKl(item){
+				console.log(item)
+
+				uni.request({
+					url:'https://m.fengjinqi.com/getTbkTpwd',
+					method:'GET',
+					data:{'text':item.title,'url':'https:'+item.coupon_share_url,'logo':item.pict_url},
+					success: (res) => {
+						console.log(res.data.tbk_tpwd_create_response.data.model)
+						uni.showModal({
+						    title: '提示',
+						    content: res.data.tbk_tpwd_create_response.data.model,
+						    success: function (res) {
+						        if (res.confirm) {
+						            console.log('用户点击确定');
+						        } else if (res.cancel) {
+						            console.log('用户点击取消');
+						        }
+						    }
+						});
+					}
+				})
+			},
 			scroll(e){
 				this.old.scrollTop = e.detail.scrollTop
 			},
@@ -141,8 +165,16 @@
 					method:'GET',
 					data:{"q":this.value},
 					success:(res) => {
+						console.log(res)
 						uni.hideLoading()
 						if(res.statusCode==200){
+							if(res.data.error_response){
+								uni.showToast({
+								    title:  res.data.error_response.sub_msg,
+									icon:'none'
+								});
+								return
+							}
 							this.msg = res.data.tbk_dg_material_optional_response.result_list.map_data
 						}else{
 							uni.showToast({
@@ -291,12 +323,25 @@
 	  .main-right{
 		  width: 25%;
 		  text-align: center;
-		  text{
+		  display: flex;
+		  display: flex;
+		  flex-direction: column;
+		  .price{
 			  border-radius: 15px;
 			  padding: 3px 8px;
 			  background: #FB3434;
 			  font-size: 14px;
 			  color: #fff;
+			  
+		  }
+		  .kl{
+			border-radius: 15px;
+			padding: 3px 8px;
+			background: #FB3434;
+			font-size: 14px;
+			color: #fff;  
+			margin-top: 6px;
+			
 		  }
 	  }
   }
