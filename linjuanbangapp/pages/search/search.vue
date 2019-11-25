@@ -30,7 +30,7 @@
 						</view>
 						<view class="main-right">
 							<text class="price">{{item.coupon_amount}}元卷</text>
-							<text class="kl" @click.stop="searchKl(item)">分享淘口令</text>
+							<!-- <text class="kl" @click.stop="searchKl(item)">分享淘口令</text> -->
 						</view>
 					</view>
 				</view>
@@ -144,7 +144,8 @@
 				}
 				if(this.value.trim().length<=0)return
 				this.history=false
-				this.storage.unshift(this.value)
+				if(this.storage.indexOf(this.value)=='-1')this.storage.unshift(this.value)
+		
 				if(this.storage.length>10)this.storage.pop()
 				try {
 				    uni.setStorageSync('storage_key', this.storage);

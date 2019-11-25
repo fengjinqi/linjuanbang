@@ -2,16 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="650960e0-97d1-48f1-b2de-7ecc9e6499b0" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/linjuanbang.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/taobao/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/taobao/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/apps/taobao/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/taobao/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/jd/api/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/jd/api/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/apps/jd_app/tests.py" beforeDir="false" afterPath="$PROJECT_DIR$/apps/jd_app/tests.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linjuanbangapp/pages/jd/jd.vue" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/pages/jd/jd.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/linjuanbangapp/pages/search/search.vue" beforeDir="false" afterPath="$PROJECT_DIR$/linjuanbangapp/pages/search/search.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/top/api/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/top/api/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,8 +22,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="450">
-              <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+            <state relative-caret-position="2618">
+              <caret line="130" selection-start-line="130" selection-end-line="130" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -39,8 +34,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/top/api/base.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="246">
-              <caret line="241" selection-start-line="241" selection-end-line="241" />
+            <state relative-caret-position="4972">
+              <caret line="231" column="34" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
               <folding>
                 <element signature="e#74#85#0" expanded="true" />
               </folding>
@@ -49,10 +44,31 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/apps/jd_app/tests.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="127">
+              <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/threading.pyi">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+              <folding>
+                <element signature="e#23#132#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="220">
-              <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+            <state relative-caret-position="132">
+              <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -121,16 +137,17 @@
         <option value="$PROJECT_DIR$/linjuanbang/settings.py" />
         <option value="$PROJECT_DIR$/apps/taobao/urls.py" />
         <option value="$PROJECT_DIR$/jd/api/base.py" />
-        <option value="$PROJECT_DIR$/top/api/base.py" />
         <option value="$PROJECT_DIR$/apps/taobao/views.py" />
+        <option value="$PROJECT_DIR$/top/api/base.py" />
+        <option value="$PROJECT_DIR$/apps/jd_app/tests.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="-29" />
-    <option name="y" value="56" />
-    <option name="width" value="1936" />
-    <option name="height" value="1058" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="75" />
+    <option name="y" value="-20" />
+    <option name="width" value="1386" />
+    <option name="height" value="788" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -138,7 +155,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="ProjectPane" />
       <pane id="Scope">
         <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
           <expand>
@@ -155,12 +171,13 @@
               <item name="linjuanbang" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
               <item name="C:\Users\lenovo\Desktop\linjuanbang" type="442cc68d:ScopeViewTreeModel$RootNode" />
               <item name="apps" type="9f88c78c:ScopeViewTreeModel$FileNode" />
-              <item name="taobao" type="9f88c78c:ScopeViewTreeModel$FileNode" />
+              <item name="jd_app" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -203,7 +220,29 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Django server.linjuanbang">
+  <component name="RunManager" selected="Python.tests (1)">
+    <configuration name="tests (1)" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="linjuanbang" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/apps/jd_app" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/apps/jd_app/tests.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <configuration name="tests" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="linjuanbang" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -253,9 +292,11 @@
     <list>
       <item itemvalue="Django server.linjuanbang" />
       <item itemvalue="Python.tests" />
+      <item itemvalue="Python.tests (1)" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.tests (1)" />
         <item itemvalue="Python.tests" />
       </list>
     </recent_temporary>
@@ -284,19 +325,21 @@
       <workItem from="1572868915494" duration="633000" />
       <workItem from="1572917023257" duration="7744000" />
       <workItem from="1572959166056" duration="651000" />
-      <workItem from="1573441452079" duration="4327000" />
+      <workItem from="1573441452079" duration="4921000" />
+      <workItem from="1573612445713" duration="4427000" />
+      <workItem from="1573700157813" duration="11100000" />
+      <workItem from="1574040317051" duration="171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106398000" />
+    <option name="totallyTimeSpent" value="122690000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="754" extended-state="7" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
       <window_info id="Favorites" order="0" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.26626325" />
+      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.21406959" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Database Changes" order="0" />
       <window_info anchor="bottom" id="Terminal" order="1" weight="0.32419354" />
@@ -306,8 +349,8 @@
       <window_info anchor="bottom" id="Docker" order="5" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="6" />
       <window_info anchor="bottom" id="Find" order="7" />
-      <window_info anchor="bottom" id="Run" order="8" weight="0.32903227" />
-      <window_info anchor="bottom" id="Debug" order="9" visible="true" weight="0.41451612" />
+      <window_info active="true" anchor="bottom" id="Run" order="8" visible="true" weight="0.12096774" />
+      <window_info anchor="bottom" id="Debug" order="9" weight="0.41451612" />
       <window_info anchor="bottom" id="Cvs" order="10" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="11" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="12" />
@@ -323,6 +366,7 @@
     <option name="version" value="1" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/linjuanbang$tests__1_.coverage" NAME="tests (1) Coverage Results" MODIFIED="1573720499854" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/jd_app" />
     <SUITE FILE_PATH="coverage/linjuanbang$tests.coverage" NAME="tests Coverage Results" MODIFIED="1572320901178" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/apps/taobao" />
   </component>
   <component name="debuggerHistoryManager">
@@ -380,8 +424,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/views/decorators/http.py" />
-    <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/apps/registry.py" />
     <entry file="file://$USER_HOME$/Envs/tao/Lib/site-packages/django/forms/models.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -670,8 +712,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/taobao/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="130" lean-forward="true" selection-start-line="130" selection-end-line="130" />
+        <state relative-caret-position="2618">
+          <caret line="130" selection-start-line="130" selection-end-line="130" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
@@ -680,8 +722,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/top/api/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="241" selection-start-line="241" selection-end-line="241" />
+        <state relative-caret-position="4972">
+          <caret line="231" column="34" selection-start-line="231" selection-start-column="34" selection-end-line="231" selection-end-column="34" />
           <folding>
             <element signature="e#74#85#0" expanded="true" />
           </folding>
@@ -690,11 +732,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/apps/taobao/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="34" selection-start-line="10" selection-start-column="34" selection-end-line="10" selection-end-column="34" />
+        <state relative-caret-position="132">
+          <caret line="9" column="35" selection-start-line="9" selection-start-column="35" selection-end-line="9" selection-end-column="35" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/helpers/typeshed/stdlib/2and3/threading.pyi">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="106" lean-forward="true" selection-start-line="106" selection-end-line="106" />
+          <folding>
+            <element signature="e#23#132#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/apps/jd_app/tests.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="127">
+          <caret line="68" column="21" lean-forward="true" selection-start-line="68" selection-start-column="21" selection-end-line="68" selection-end-column="21" />
         </state>
       </provider>
     </entry>

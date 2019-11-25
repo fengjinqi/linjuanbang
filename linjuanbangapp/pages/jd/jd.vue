@@ -124,6 +124,7 @@
 		},
 		methods:{
 			getjs(a,b){
+				console.log(a,b)
 				return ((a*100-b*100)/100).toFixed(1)
 			},
 			getBanner(){
@@ -145,6 +146,7 @@
 			},
 			getList(type,index,n){
 				this.active = index
+				this.categoryId = type
 				if(!n)uni.showLoading({
 				    title: '加载中...'
 				});
@@ -153,7 +155,7 @@
 				this.$nextTick(function() {
 					this.scrollTop = 0
 				});
-				this.categoryId = type
+				
 				uni.request({
 					url:'https://m.fengjinqi.com/jd/getList',
 					data:{'type':type},
@@ -165,6 +167,7 @@
 						this.msg=item.map(data=>{
 							
 							if(data.couponInfo.couponList.length>0){
+								
 								data.youhui=this.getjs(data.priceInfo.price,data.couponInfo.couponList[0].discount)
 							}
 							return data
@@ -227,9 +230,18 @@
 						if(res.statusCode==200){
 							let result = res.data.jd_union_open_goods_jingfen_query_response
 							let item = JSON.parse(result.result).data
-							console.log(item)
-								this.msg = []
-								this.msg = this.msg.concat(item)
+						
+								let obj=item.map(data=>{
+									
+									if(data.couponInfo.couponList.length>0){
+										
+										data.youhui=this.getjs(data.priceInfo.price,data.couponInfo.couponList[0].discount)
+									}
+									return data
+								})
+								
+								//this.count = Math.ceil(JSON.parse(result.result).totalCount/20)
+								this.msg = this.msg.concat(obj)
 						
 						}else{
 							uni.showToast({
